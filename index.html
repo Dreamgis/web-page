@@ -1,25 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>DreamGIS</title>
-
-    <section class="hero is-link">
-        <div class="hero-body">
-          <p class="title">
-            DreamGIS SAS
-          </p>
-          <p class="subtitle">
-            Estamos en construcción! regresaremos pronto
-            puedes contactarnos a <a href="mailto:info@dreamgis.com">
-          </p>
-        </div>
-      </section>
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamGIS</title>
+  <link rel="shortcut icon" href="img/logo-dreamgis.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    
+  <header>
+    <!--------------------------------------------barra navegación-------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-custom-color">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img class="img-nav" src="img/logo-dreamgis-horizontal.png" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-icon-color"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-evenly row-width-nav">
+            <li class="nav-item 1 r-texto">
+              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item 4 r-texto">
+              <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <!-- <li class="nav-item 2 r-texto">
+              <a class="nav-link" href="./negocio.html">NEGOCIO</a>
+            </li>
+            <li class="nav-item 3 r-texto">
+              <a class="nav-link" href="./soporte.html">SOPORTE</a>
+            </li> -->
+            <li class="nav-item 5 r-texto">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--------------------------------------------carrusel----------------------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider-elevation.png" class="d-block w-100 img-shadow" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider2.png" class="d-block w-100 img-shadow" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/coolmap1.png" class="d-block w-100 img-shadow" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/coolmap2.png" class="d-block w-100 img-shadow" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <!---------------------------------------------section------------------------------------------------->
+  <section id="section_1">
+    <div class="row justify-content-around align-items-center homeRowStart">
+      <div class="col-sm-12 col-md-4 col-lg-3">
+        <img src="img/logo-dreamgis.png" class="img-fluid logoDream" srcset="" />
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="paragraph paragraphStart">
+          Somos una compañía con sede en la ciudad de Bogotá – Colombia,
+          que le apasionan los sistemas de información geográfica (SIG),
+          pero sobre todo el potencial que los datos geográficos y la tecnología
+          pueden ofrecer a múltiples organizaciones y proyectos de nuestro país.
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-around blackSection" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+      <div class="col-sm-10 col-md-10 col-lg-8">
+        <div class="centeredColumn">
+          <h1> Tecnología a su disposición</h1>
+          <div class="centeredColumnText">
+            Con nuestro trabajo, <b>experiencia</b> e <b>innovación</b>
+            garantizamos resultados y la satisfacción de nuestros clientes.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-around" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+      <div class="col-12">
+        <img src="img/sectiondivider.png" class="img-fluid" srcset="" />
+      </div>
+    </div>
+    <div class="row justify-content-around homeRow">
+      <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-down-right">
+        <div class="centered-content">
+          <div class="paragraph">
+            Conscientes de los múltiples desafíos que enfrentan las organizaciones
+            públicas y privadas en temas de análisis geográfico e implementación de soluciones SIG,
+            contamos con expertos en múltiples áreas,
+            desde la integración y transformación de datos espaciales hasta la implementación,
+            diseño y arquitectura de soluciones SIG que usan la tecnología ArcGIS.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-down-left">
+        <img src="img/picked.png" class="img-fluid roundImage" srcset="" />
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------------------section aliados------------------------------------------------->
+  <section id="section_aliados">
+    <div class="row text-center row-width texto_aliados"
+      data-aos="fade-right"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine">
+      <div class="paragraph white-text">
+        Contamos con aliados internacionales como <b>Earth Big Data</b>, <b>Safe Software</b> y <b>ConTerra</b> nuestro aliado europeo.
+        También somos socios de Negocio de <b>Esri Colombia</b> el distribuidor colombiano de la <b>mejor
+        plataforma SIG</b> que existe en el mercado <b>ArcGIS</b>. 
+      </div>
+    </div>
+    <div class="row justify-content-around align-items-center row-width logos_aliados"
+      data-aos="fade"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine">
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-earth-big-data.png" alt="Earth Big Data" srcset="" />
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-conterra.png" alt="Earth Big Data" srcset="" />
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-esri.png" alt="nequi" srcset="" />
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-safe-software.png" alt="nequi" srcset="" />
+      </div>
+    </div>
+    <div class="row justify-content-around align-items-center row-width logos_aliados"
+      data-aos="fade"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine">
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-vertigis.svg" alt="nequi" srcset="" />
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-geocortex.png" alt="nequi" srcset="" />
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-2">
+        <img class="img-fluid img-pagos" src="img/logo-vertigis-studio.svg" alt="nequi" srcset="" />
+      </div>
+    </div>
+    <div class="row text-center row-width texto_aliados"
+      data-aos="fade-left"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine">
+      <div class="paragraph white-text">
+        Además somos distribuidores oficiales de las soluciónes de integración <b>Geocortex</b> una potente plataforma web y
+        <b>FME</b>  desarrolladas por <b>VertiGIS</b> que le permite sacar todo el provecho a su <b>ArcGIS Enterprise</b> y
+        <b>ArcGIS on-line</b> según sea su necesidad.
+      </div>
+    </div>
+  </section>
+  <section id="contactSection"
+      data-aos="fade"
+      data-aos-offset="500">
+    <div class="container">
+      <div class="row row-width">
+        <img class="img-fluid" src="img/slider5.png" alt="">
+      </div>
+      <div class="row row-width">
+        <div class="col-sm-12 col-md-9 col-lg-9">
+          <div class="row-width experienceDescription">
+            <div class="row justify-content-center align-content-center white-text">
+              Contamos con más de 6 años en el mercado y nuestra experiencia en la tecnología geografíca suma más de 10 años.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="contactButton">
+            <button type="button" class="btn btn-dark">Contáctanos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------------------------------------footer------------------------------------------------->
+  <footer>
+    <div class="row-width">
+      <div class="footerRow">
+          <img class="img-nav" src="img/logo-dreamgis-horizontal.png" alt="" />
+      </div>
+    </div>
+  </footer>
+  <script>
+		ScrollReveal().reveal('header', {delay: 200});
+		ScrollReveal().reveal('#section_1', {delay: 300});
+	</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
