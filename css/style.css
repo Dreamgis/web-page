@@ -256,7 +256,7 @@ header .marco .marco_interno .cuadro a {
 }
 
 .bckgnd-form {
-  background-image: url("../img/img-footer.png");
+  background-image: url("../img/img-footer-min.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 7% 0;
@@ -464,7 +464,7 @@ form h2 {
 
 .contactButton {
   background-color: var(--gris);
-  background-image: url("../img/elevation1.png");
+  background-image: url("../img/elevation1-min.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -559,7 +559,7 @@ footer {
 
 /**-------------------------------page contacto---------------------------------------*/
 .bckgnd-form-contacto {
-  background-image: url("../img/img_slider_.png");
+  background-image: url("../img/img_slider_-min.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 7% 0;
