@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  overflow-x: hidden;
   /* outline: var(--raya); */
   font-weight: 400;
   /* font-family: "Arima Madurai", sans-serif; */
@@ -39,6 +39,7 @@ html {
   --normal-text-weight: 400;
   --normal-text-size: 15pt;
   --small-text-size: 10pt;
+  --xsmall-text-size: 8pt;
 }
 
 body {
@@ -304,9 +305,13 @@ form h2 {
 }
 
 .blackSection {
-  height: 20vh;
+  height: 15em;
   /* border-radius: 30% 30% 0 0; */
   background-color: var(--negro-section);
+}
+.blackSection h1{
+  margin: 0;
+  overflow: visible;
 }
 
 .homeRow {
@@ -474,7 +479,7 @@ form h2 {
 .contactButton:hover {
   filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
+  /* -webkit-transform: scale(1.01); */
 }
 
 #misionVision {
@@ -506,8 +511,13 @@ footer {
 .footerRow {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  font-size: var(--xsmall-text-size);
+  margin-bottom: 0.4em;
+}
+.footerRow a{
+  margin-right: 0.3em;
 }
 
 /**--------------------------page nosotros------------------------*/
@@ -617,10 +627,10 @@ height: 87vh;
     background-color: var(--blanco);
   }
   .nav-link {
-    color: var(--salmon);
+    color: var(--negro);
   }
   .nav-icon-color {
-    color: var(--salmon);
+    color: var(--verde-dream);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -725,5 +735,12 @@ height: 87vh;
   .rowAliados img{
     width: 100%;
     margin-bottom: 1em;
+  }
+
+  .centeredColumn h1{
+    font-size: var(--small-text-size);
+  }
+  .centeredColumnText{
+    font-size: var(--xsmall-text-size);
   }
 }
