@@ -25,7 +25,8 @@ html {
   --blanco: #fff;
   --gris-texto: rgb(74, 74, 74);
   --negro-section: #020914;
-  --negro: #000000;
+  --negro: #4E5C67;
+  --negro-full: #000000;
   --salmon: #ec6568;
   --verde: #05adbf;
   --blanco_sombra: rgb(212, 211, 211);
@@ -311,14 +312,14 @@ form h2 {
 .homeRow {
   font-size: var(--normal-text-size);
   font-weight: var(--normal-text-weight);
-  color: var(--gris-texto);
+  color: var(--negro);
   margin-top: 5em;
   margin-bottom: 5em;
 }
 .homeRowStart {
   font-size: var(--normal-text-size);
   font-weight: var(--normal-text-weight);
-  color: var(--gris-texto);
+  color: var(--negro);
   margin-top: 2.5em;
   margin-bottom: 5em;
 }
@@ -358,10 +359,33 @@ form h2 {
 }
 
 
-#section_aliados {
-  margin-top: 15em;
+#section_clientes {
+  /* margin-top: 15em; */
   margin-bottom: 15em;
   background-color: var(--blanco);
+  color: var(--negro);
+}
+#section_aliados {
+  /* margin-top: 15em; */
+  /* margin-bottom: 15em; */
+  background-color: var(--blanco);
+  color: var(--negro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowAliados {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.rowAliados img{
+  width: 15em;
 }
 
 .texto_aliados {
@@ -457,6 +481,17 @@ form h2 {
   padding: 3em;
   margin-top: 5em;
   margin-bottom: 5em;
+  color: var(--negro);
+}
+#socios {
+  padding: 3em;
+  margin-top: 3em;
+  /* margin-bottom: 5em; */
+  color: var(--negro);
+}
+
+.justified-text {
+  text-align: justify;
 }
 
 /*---------------------------------------------footer--------------------------------------------*/
@@ -478,6 +513,9 @@ footer {
 /**--------------------------page nosotros------------------------*/
 .mv-padding {
   padding: 5% 10%;
+}
+.sm-padding {
+  padding: 1% 3%;
 }
 .img-margin-top {
   margin-top: 3%;
@@ -620,9 +658,9 @@ height: 87vh;
   .centeredColumnText{
     font-size: var(--small-text-size);
   }
-  #section_aliados img {
+  /* #section_aliados img {
     padding: 2em;
-  }
+  } */
   .logoDream {
     padding: 2em;
   }
@@ -634,6 +672,14 @@ height: 87vh;
   }
   .contactButton {
     padding: 2em;
+  }
+  .rowAliados {
+    width: 100%;
+    padding: 1em;
+  }
+  .rowAliados img{
+    width: 100%;
+    margin-bottom: 1em;
   }
 }
 
@@ -671,5 +717,13 @@ height: 87vh;
 
   .footerRow {
     justify-content: center;
+  }
+  .rowAliados {
+    width: 100%;
+    padding: 1em;
+  }
+  .rowAliados img{
+    width: 100%;
+    margin-bottom: 1em;
   }
 }
