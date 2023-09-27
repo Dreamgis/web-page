@@ -494,6 +494,7 @@ form h2 {
 #misionVision h3{
   overflow-y: hidden;
   margin: 0;
+  margin-bottom: 0.5em;
 }
 #socios {
   padding: 3em;
