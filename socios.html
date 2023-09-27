@@ -5,21 +5,21 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>fayur</title>
-  <link rel="shortcut icon" href="img/Recurso 57isotipo-min.png" type="image/x-icon" />
+  <title>DreamGIS</title>
+  <link rel="shortcut icon" href="img/logo-dreamgis-min.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
   <header>
-    <!-- <div>
-      <img class="img-header" src="img/logo_svg.svg" alt="" />
-    </div> -->
     <!--------------------------------------------barra navegación-------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-custom-color">
       <div class="container-fluid">
@@ -44,9 +44,9 @@
             <li class="nav-item 2 r-texto">
               <a class="nav-link" href="./socios.html">SOCIOS</a>
             </li>
-            <li class="nav-item 3 r-texto">
+            <!-- <li class="nav-item 3 r-texto">
               <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-            </li>
+            </li> -->
             <li class="nav-item 5 r-texto">
               <a class="nav-link" href="./contacto.html">CONTACTO</a>
             </li>
@@ -59,23 +59,20 @@
     <!---------------------------------------------section------------------------------------------------->
     <section id="socios">
       <div class="row align-items-center row-width">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-              <img src="img/partners2-min.png" alt="" class="img-fluid" srcset="" />
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 sm-padding justified-text">
-            <h3>NUESTROS SOCIOS DE NEGOCIO</h3>
-            <p>
-              Contamos con aliados internacionales como <b>Earth Big Data</b> y <b>VertiGIS</b> nuestro aliado canadiense.
-              También somos socios de Negocio de <b>Esri Colombia</b> el distribuidor colombiano de<b>ArcGIS</b>.
-            </p>
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+          <img src="img/partners2-min.png" alt="" class="img-fluid" srcset="" />
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 sm-padding justified-text">
+          <h3>NUESTROS SOCIOS DE NEGOCIO</h3>
+          <p class="justified-text">
+            Contamos con aliados internacionales como <b>Earth Big Data</b> y <b>VertiGIS</b> nuestro aliado canadiense.
+            También somos socios de Negocio de <b>Esri Colombia</b> el distribuidor colombiano de<b>ArcGIS</b>.
+          </p>
+        </div>
       </div>
     </section>
     <section id="section_aliados">
-      <div class="row-width logos_aliados"
-        data-aos="fade"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+      <div class="row-width logos_aliados" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <div class="row rowAliados">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <img class="img-fluid" src="img/logo-earth-big-data-min.png" alt="Earth Big Data" srcset="" />
@@ -84,7 +81,7 @@
             <p>
               Earth Big Data (EBD) se fundó en 2015 para abordar los grandes desafíos ambientales de nuestro
               tiempo brindando acceso a herramientas computacionales modernas y que extraen grandes conjuntos
-              de datos de observación de la Tierra. Estamos totalmente basados ​​en la nube y comprometidos con
+              de datos de observación de la Tierra. Totalmente basados ​​en la nube y comprometidos con
               soluciones de código abierto que sean escalables, flexibles y optimizadas para una amplia gama
               de presupuestos, plazos y objetivos.
             </p>
@@ -96,12 +93,15 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 justified-text">
             <p>
-              Esri es el líder del mercado mundial en software de sistemas de información geográfica (SIG), inteligencia de ubicación y cartografía.
+              Esri es el líder del mercado mundial en software de sistemas de información geográfica (SIG), inteligencia
+              de ubicación y cartografía.
               <br>
-              Desde 1969, hemos apoyado a los clientes con ciencia geográfica y análisis geoespacial, lo que llamamos La ciencia del dónde.
+              Desde 1969, han apoyado a los clientes con ciencia geográfica y análisis geoespacial, lo que llaman La
+              ciencia del dónde.
               <br>
-              Adoptamos un enfoque geográfico para la resolución de problemas, que cobra vida gracias a la moderna tecnología GIS.
-              Estamos comprometidos a utilizar la ciencia y la tecnología para construir un mundo sostenible.
+              Adoptan un enfoque geográfico para la resolución de problemas, que cobra vida gracias a la moderna
+              tecnología GIS.
+              Comprometidos a utilizar la ciencia y la tecnología para construir un mundo sostenible.
             </p>
           </div>
         </div>
@@ -111,9 +111,12 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 justified-text">
             <p>
-              Creemos que nuestra tecnología es tan buena como las personas que la construyen y la comparten.
-              La experiencia única que cada miembro del equipo aporta a su trabajo en VertiGIS se traduce en las soluciones
-              y la tecnología que ofrecemos. Empleados expertos y apasionados dan vida a soluciones de activos espaciales potentes y útiles.
+              Su tecnología es tan buena como las personas que la construyen y la comparten.
+              La experiencia única que cada miembro del equipo aporta a su trabajo en VertiGIS se traduce en las
+              soluciones
+              y la tecnología que ofrecemos. Empleados expertos y apasionados dan vida a soluciones de activos
+              espaciales
+              potentes y útiles.
             </p>
           </div>
         </div>
@@ -121,23 +124,28 @@
       <img src="img/socios-divider2-min.png" alt="" class="img-fluid imgBottom" srcset="" />
     </section>
     <footer>
-    <div class="row-width">
-      <div class="footerRow">
+      <div class="row-width">
+        <div class="footerRow">
           <!-- <img class="" width="60" src="img/logo-dreamgis-horizontal-min.png" alt="" /> -->
           <a href="https://www.linkedin.com/company/dreamgis" target="_blank">
-              <img width="20" height="20"
-                src="img/icon-linkedin.svg"
-                alt="LinkedIn">
+            <img width="20" height="20" src="img/icon-linkedin.svg" alt="LinkedIn">
           </a>
           <div id="copyright">© 2023 DreamGIS. All rights reserved.</div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <script>
+      ScrollReveal().reveal('header', { delay: 200 });
+      ScrollReveal().reveal('#socios', { delay: 300 });
+    </script>
+    <script>
+      goHomePage = () => {
+        window.location.href = "./index.html";
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
-<script>
-  goHomePage = () => {
-    window.location.href = "./index.html";
-  }
-</script>
 
 </html>
