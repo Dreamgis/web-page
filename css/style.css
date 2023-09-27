@@ -809,6 +809,14 @@ height: 87vh;
   .experienceDescription {
     font-size: var(--normal-text-size);
   }
+  .orangeLeftMarker {
+    width: 10em;
+    height: 4em;
+  }
+  .orangeRightMarker {
+    width: 10em;
+    height: 4em;
+  }
 }
 
 /* 
@@ -823,6 +831,14 @@ height: 87vh;
   }
   .contactButton {
     padding: 2em;
+  }
+  .orangeLeftMarker {
+    width: 8em;
+    height: 3em;
+  }
+  .orangeRightMarker {
+    width: 8em;
+    height: 3em;
   }
 }
 
@@ -861,6 +877,14 @@ height: 87vh;
   .rowAliados img{
     width: 100%;
     margin-bottom: 1em;
+  }
+  .orangeLeftMarker {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeRightMarker {
+    width: 6em;
+    height: 2em;
   }
 }
 
@@ -913,5 +937,13 @@ height: 87vh;
   }
   .centeredColumnText{
     font-size: var(--xsmall-text-size);
+  }
+  .orangeLeftMarker {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeRightMarker {
+    width: 6em;
+    height: 2em;
   }
 }
