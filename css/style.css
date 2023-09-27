@@ -615,6 +615,22 @@ form h2 {
   width: 15em;
   height: 4em;
 }
+.orangeLeftMarkerBottom {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 3em 0 0 0;
+  width: 15em;
+  height: 4em;
+}
+.orangeRightMarkerBottom {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 3em 0 0;
+  width: 15em;
+  height: 4em;
+}
 
 .columnSlider {
   padding: 0.5em;
@@ -817,6 +833,14 @@ height: 87vh;
     width: 10em;
     height: 4em;
   }
+  .orangeLeftMarkerBottom {
+    width: 10em;
+    height: 4em;
+  }
+  .orangeRightMarkerBottom {
+    width: 10em;
+    height: 4em;
+  }
 }
 
 /* 
@@ -837,6 +861,14 @@ height: 87vh;
     height: 3em;
   }
   .orangeRightMarker {
+    width: 8em;
+    height: 3em;
+  }
+  .orangeLeftMarkerBottom {
+    width: 8em;
+    height: 3em;
+  }
+  .orangeRightMarkerBottom {
     width: 8em;
     height: 3em;
   }
@@ -883,6 +915,14 @@ height: 87vh;
     height: 2em;
   }
   .orangeRightMarker {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeLeftMarkerBottom {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeRightMarkerBottom {
     width: 6em;
     height: 2em;
   }
@@ -943,6 +983,14 @@ height: 87vh;
     height: 2em;
   }
   .orangeRightMarker {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeLeftMarkerBottom {
+    width: 6em;
+    height: 2em;
+  }
+  .orangeRightMarkerBottom {
     width: 6em;
     height: 2em;
   }
