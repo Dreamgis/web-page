@@ -425,8 +425,8 @@ form h2 {
 
 .texto_aliados {
   background-color: var(--verde-dream);
-  margin-bottom: 5em;
-  margin-top: 5em;
+  /* margin-bottom: 5em; */
+  /* margin-top: 5em; */
 }
 
 .logos_aliados {
@@ -552,6 +552,69 @@ form h2 {
 .columnSliderLong2 {
   width: 25%;
 } */
+
+.leavesRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.leavesRowEnd {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.leavesRowStart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.leavesRowEndToEnd {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orangeLeft {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 3em;
+  width: 5em;
+  height: 4em;
+}
+.orangeRight {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 3em 0;
+  width: 5em;
+  height: 4em;
+}
+.orangeLeftMarker {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 0 3em;
+  width: 15em;
+  height: 4em;
+}
+.orangeRightMarker {
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 3em 0;
+  width: 15em;
+  height: 4em;
+}
 
 .columnSlider {
   padding: 0.5em;
