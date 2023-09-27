@@ -512,6 +512,27 @@ form h2 {
   text-align: justify;
 }
 
+.rowSliders {
+  margin: 2em;
+}
+
+/* .columnSliderSquare {
+  width: 15%;
+}
+.columnSliderLong {
+  width: 25%;
+}
+.columnSliderSmall {
+  width: 30%;
+}
+.columnSliderLong2 {
+  width: 25%;
+} */
+
+.columnSlider {
+  padding: 0.5em;
+}
+
 /*---------------------------------------------footer--------------------------------------------*/
 
 footer {
