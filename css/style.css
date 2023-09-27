@@ -59,6 +59,7 @@ nav {
   border-radius: .2em;
   padding: 0.4em;
   background-color: var(--blanco);
+  cursor: pointer;
 }
 
 .nav-color-custom {
