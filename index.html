@@ -57,17 +57,7 @@
       </div>
     </nav>
     <!--------------------------------------------carrusel----------------------------------------------->
-    <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-      </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/new-slider-min.png" class="d-block w-100 img-shadow" alt="..." />
@@ -98,6 +88,8 @@
   <!---------------------------------------------section------------------------------------------------->
   <section id="section_1">
     <div class="row justify-content-around align-items-center homeRowStart">
+      <!-- <div class="rowStartDividerTop">
+      </div> -->
       <div class="col-sm-12 col-md-4 col-lg-3">
         <img src="img/favicon.png" class="img-fluid logoDream" srcset="" />
       </div>
@@ -109,9 +101,17 @@
           pueden ofrecer a múltiples organizaciones y proyectos de nuestro país.
         </div>
       </div>
+      <div class="rowStartDividerBottom"></div>
     </div>
-    <div class="row justify-content-around blackSection" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+    <!-- <div class="leavesRow">
+      <div class="orangeLeft"></div>
+      <div class="orangeRight"></div>
+    </div>
+    <div class="leavesRow">
+      <div class="orangeRight"></div>
+      <div class="orangeLeft"></div>
+    </div> -->
+    <div class="row justify-content-around blackSection" data-aos="fade" data-aos-anchor-placement="top-bottom">
       <div class="col-sm-10 col-md-10 col-lg-8">
         <div class="centeredColumn">
           <h1> Tecnología a su disposición</h1>
@@ -122,8 +122,7 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-around" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+    <div class="row justify-content-around" data-aos="fade" data-aos-anchor-placement="top-bottom">
       <div class="col-12">
         <img src="img/sectiondivider-min.png" class="img-fluid" srcset="" />
       </div>
@@ -145,61 +144,216 @@
       </div>
     </div>
   </section>
-
-  <!---------------------------------------------section aliados------------------------------------------------->
-  <section id="section_clientes">
-    <div class="row text-center row-width texto_aliados"
-      data-aos="fade-right"
-      data-aos-offset="300"
+  <section id="section_clientes" data-aos="fade-right" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+    <!-- <div class="leavesRow">
+      <div class="orangeLeft"></div>
+      <div class="orangeRight"></div>
+    </div> -->
+    <div class="row text-center row-width texto_aliados" data-aos="fade-right" data-aos-offset="300"
       data-aos-easing="ease-in-sine">
+      <div class="leavesRowEndToEnd">
+        <div class="orangeRightMarker"></div>
+        <div class="orangeLeftMarker"></div>
+      </div>
+      <!-- <div class="leavesRow">
+        <div class="orangeRight"></div>
+        <div class="orangeLeft"></div>
+      </div> -->
       <div class="paragraph white-text justified-text">
-        Contamos con aliados internacionales como <b>Earth Big Data</b> y <b>VertiGIS</b> nuestro aliado canadiense.
-        También somos socios de Negocio de <b>Esri Colombia</b> el distribuidor colombiano de la <b>
-        plataforma SIG</b> que existe en el mercado <b>ArcGIS</b>. 
+        Contamos con clientes de diferentes sectores e industrias, tanto privadas como gubernamentales con los
+        <b>mejores resultados</b>
       </div>
     </div>
-    <div class="row justify-content-around align-items-center row-width logos_aliados"
-      data-aos="fade"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-earth-big-data-min.png" alt="Earth Big Data" srcset="" />
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-esri-min.png" alt="Esri Colombia" srcset="" />
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-vertigis.png" alt="VertiGIS" srcset="" />
-      </div>
-    </div>
-    <!-- <div class="row justify-content-around align-items-center row-width logos_aliados"
-      data-aos="fade"
-      data-aos-offset="500"
-      data-aos-easing="ease-in-sine">
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-vertigis.svg" alt="nequi" srcset="" />
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-geocortex-min.png" alt="nequi" srcset="" />
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-2">
-        <img class="img-fluid img-pagos" src="img/logo-vertigis-studio.svg" alt="nequi" srcset="" />
+    <!---------------------------------------------section clientes------------------------------------------------->
+    
+    <!-- <div class="container row-width" data-aos="fade">
+      <div class="row rowSliders justify-content-evenly align-items-center">
+        <div class="col-sm-12 col-md-6 col-lg-3 columnSlider columnSliderSquare">
+          <div id="carouselSquare" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/oea-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/wcs-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/wwf-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/cenit-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 columnSlider columnSliderLong">
+          <div id="carouselLong" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/tnc-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/pei-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/invias-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/experian-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/esant-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/enel-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/caem-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 columnSlider columnSliderSmall">
+          <div id="carouselSmall" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/gas-oriente-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/fedegan-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/fasecolda-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/anm-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 columnSlider columnSliderLong2">
+          <div id="carouselLong2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/astra-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/audubon-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/bancolombia-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div> -->
-    <div class="row text-center row-width texto_aliados"
-      data-aos="fade-left"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-      <div class="paragraph white-text justified-text">
-        Además somos distribuidores oficiales de las soluciónes de integración <b>Geocortex</b> una potente plataforma web y
-        desarrollada por <b>VertiGIS</b> que le permite sacar todo el provecho a su <b>ArcGIS Enterprise</b> y
-        <b>ArcGIS online</b> según sea su necesidad.
+    <div class="container row-width" data-aos="fade">
+      <div class="row rowSliders justify-content-evenly align-items-center">
+        <div class="col-5 col-sm-5 col-md-3 col-lg-2 columnSlider columnSliderSquare">
+          <div id="carouselSquare" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/oea-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/wcs-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/wwf-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/cenit-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row rowSliders justify-content-evenly align-items-center">
+        <div class="col-7 col-sm-5 col-md-4 col-lg-3 columnSlider columnSliderLong">
+          <div id="carouselLong" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/tnc-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/pei-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/invias-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/experian-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/esant-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/enel-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/caem-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 col-sm-5 col-md-4 col-lg-3 columnSlider columnSliderLong2">
+          <div id="carouselLong2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/astra-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/audubon-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/bancolombia-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row rowSliders justify-content-evenly align-items-center">
+        <div class="col-7 col-sm-5 col-md-5 col-lg-3 columnSlider columnSliderSmall">
+          <div id="carouselSmall" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="logos/gas-oriente-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/fedegan-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/fasecolda-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="logos/anm-min.png" class="d-block w-100 fitImg" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="row text-center row-width texto_aliados">
+      <div class="paragraph white-text justified-text">
+        Gracias a nuestro equipo brindamos <b>soluciones a la medida de las necesidades</b> de nuestros clientes
+      </div>
+      <!-- <div class="leavesRow">
+        <div class="orangeLeft"></div>
+        <div class="orangeRight"></div>
+      </div> -->
+      <div class="leavesRowEndToEnd">
+        <div class="orangeRightMarkerBottom"></div>
+        <div class="orangeLeftMarkerBottom"></div>
+      </div>
+    </div>
+    <!-- <div class="leavesRow">
+      <div class="orangeRight"></div>
+      <div class="orangeLeft"></div>
+    </div> -->
   </section>
-  <section id="contactSection"
-      data-aos="fade"
-      data-aos-offset="300">
+  <section id="contactSection" data-aos="fade" data-aos-offset="300">
     <div class="container">
       <div class="row row-width">
         <img class="img-fluid" src="img/slider5-min.png" alt="">
@@ -207,7 +361,8 @@
       <div class="row row-width">
         <div class="col-sm-12 col-md-9 col-lg-9">
           <div class="row-width experienceDescription justified-text">
-              Contamos con más de 8 años en el mercado y nuestra experiencia en la tecnología geografíca suma más de 12 años.
+            Contamos con más de 8 años en el mercado y nuestra experiencia en la tecnología geografíca suma más de 12
+            años.
             <!-- <div class="row justify-content-center align-content-center white-text">
             </div> -->
           </div>
@@ -224,13 +379,11 @@
   <footer>
     <div class="row-width">
       <div class="footerRow">
-          <!-- <img class="" width="60" src="img/logo-dreamgis-horizontal-min.png" alt="" /> -->
-          <a href="https://www.linkedin.com/company/dreamgis" target="_blank">
-              <img width="20" height="20"
-                src="img/icon-linkedin.svg"
-                alt="LinkedIn">
-          </a>
-          <div id="copyright">© 2023 DreamGIS. All rights reserved.</div>
+        <!-- <img class="" width="60" src="img/logo-dreamgis-horizontal-min.png" alt="" /> -->
+        <a href="https://www.linkedin.com/company/dreamgis" target="_blank">
+          <img width="20" height="20" src="img/icon-linkedin.svg" alt="LinkedIn">
+        </a>
+        <div id="copyright">© 2023 DreamGIS. All rights reserved.</div>
       </div>
     </div>
   </footer>
@@ -243,9 +396,9 @@
     }
   </script>
   <script>
-		ScrollReveal().reveal('header', {delay: 200});
-		ScrollReveal().reveal('#section_1', {delay: 300});
-	</script>
+    ScrollReveal().reveal('header', { delay: 200 });
+    ScrollReveal().reveal('#section_1', { delay: 300 });
+  </script>
   <script>
     AOS.init();
   </script>
