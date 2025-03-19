@@ -32,6 +32,27 @@ html {
   --verde: #05adbf;
   --blanco_sombra: rgb(212, 211, 211);
   --gris: #d9d9d9;
+  /* Official DreamGIS Blues */
+  --azul-1: #0b0721;
+  --azul-1-80: #333658;
+  --azul-1-60: #666882;
+  --azul-1-40: #999BAB;
+  --azul-1-20: #CCCDD5;
+  --azul-2: #000062;
+  --azul-2-80: #333381;
+  --azul-2-60: #6666A1;
+  --azul-2-40: #9999C0;
+  --azul-2-20: #CCCCE0;
+  --azul-3: #004087;
+  --azul-3-80: #33669F;
+  --azul-3-60: #668CB7;
+  --azul-3-40: #99B3CF;
+  --azul-3-20: #CCD9E7;
+  --azul-4: #006eff;
+  --azul-4-80: #3388FF;
+  --azul-4-60: #66A6FF;
+  --azul-4-40: #99C3FF;
+  --azul-4-20: #CCE1FF;
   --raya: 3px solid #ff0000;
   --title-weight: 700;
   --title-size: 25pt;
@@ -129,10 +150,11 @@ header .navegacion {
 .nav-link {
   color: var(--negro);
   font-weight: var(--subtitle-weight);
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--verde-dream)
+  color: var(--azul);
 }
 .nav-shadow {
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.7));
@@ -426,7 +448,7 @@ form h2 {
 }
 
 .texto_aliados {
-  background-color: var(--verde-dream);
+  background-color: var(--azul-3-60);
   /* margin-bottom: 5em; */
   /* margin-top: 5em; */
 }
@@ -484,7 +506,7 @@ form h2 {
   padding: 5em;
   font-size: var(--subtitle-size);
   font-weight: var(--subtitle-weight);
-  background: var(--morado);
+  background: var(--azul-2-80);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
@@ -586,52 +608,63 @@ form h2 {
 }
 
 .orangeLeft {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 0 3em;
   width: 5em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRight {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 3em 0;
   width: 5em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeLeftMarker {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 0 0 0 3em;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRightMarker {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 0 0 3em 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeLeftMarkerBottom {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 3em 0 0 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRightMarkerBottom {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 0 3em 0 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .columnSlider {
@@ -717,9 +750,9 @@ footer {
   margin-top: 3%;
 }
 #historia {
-  background-color: var(--amarillo);
+  background-color: var(--azul-3-20);
   padding: 0% 10%;
-  color: var(--negro);
+  color: var(--azul-3);
   padding: 4em;
 }
 #historia h3{
@@ -819,7 +852,7 @@ height: 87vh;
     color: var(--negro);
   }
   .nav-icon-color {
-    color: var(--verde-dream);
+    color: var(--azul);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
