@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/arima-madurai");
 @import url("https://fonts.cdnfonts.com/css/bahiana");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
@@ -9,7 +10,7 @@
   /* outline: var(--raya); */
   font-weight: 400;
   /* font-family: "Arima Madurai", sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -31,6 +32,27 @@ html {
   --verde: #05adbf;
   --blanco_sombra: rgb(212, 211, 211);
   --gris: #d9d9d9;
+  /* Official DreamGIS Blues */
+  --azul-1: #0b0721;
+  --azul-1-80: #333658;
+  --azul-1-60: #666882;
+  --azul-1-40: #999BAB;
+  --azul-1-20: #CCCDD5;
+  --azul-2: #000062;
+  --azul-2-80: #333381;
+  --azul-2-60: #6666A1;
+  --azul-2-40: #9999C0;
+  --azul-2-20: #CCCCE0;
+  --azul-3: #004087;
+  --azul-3-80: #33669F;
+  --azul-3-60: #668CB7;
+  --azul-3-40: #99B3CF;
+  --azul-3-20: #CCD9E7;
+  --azul-4: #006eff;
+  --azul-4-80: #3388FF;
+  --azul-4-60: #66A6FF;
+  --azul-4-40: #99C3FF;
+  --azul-4-20: #CCE1FF;
   --raya: 3px solid #ff0000;
   --title-weight: 700;
   --title-size: 25pt;
@@ -57,7 +79,7 @@ nav {
 .img-nav {
   height: 50px;
   border-radius: .2em;
-  padding: 0.4em;
+  /* padding: 0.4em; */
   background-color: var(--blanco);
   cursor: pointer;
 }
@@ -128,10 +150,11 @@ header .navegacion {
 .nav-link {
   color: var(--negro);
   font-weight: var(--subtitle-weight);
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--verde-dream)
+  color: var(--azul);
 }
 .nav-shadow {
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.7));
@@ -412,19 +435,20 @@ form h2 {
 }
 
 .rowAliados {
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2em;
+  gap: 5em;
 }
 .rowAliados img{
-  width: 15em;
+  /* width: 15em; */
 }
 
 .texto_aliados {
-  background-color: var(--verde-dream);
+  background-color: var(--azul-3-60);
   /* margin-bottom: 5em; */
   /* margin-top: 5em; */
 }
@@ -482,7 +506,7 @@ form h2 {
   padding: 5em;
   font-size: var(--subtitle-size);
   font-weight: var(--subtitle-weight);
-  background: var(--morado);
+  background: var(--azul-2-80);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
@@ -584,52 +608,63 @@ form h2 {
 }
 
 .orangeLeft {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 0 3em;
   width: 5em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRight {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 3em 0;
   width: 5em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeLeftMarker {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 0 0 0 3em;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRightMarker {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 0 0 3em 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeLeftMarkerBottom {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(135deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(135deg, var(--azul-2), var(--azul-4));
   border-radius: 3em 0 0 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .orangeRightMarkerBottom {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--azul-3);
+  background: -webkit-linear-gradient(225deg, var(--azul-2), var(--azul-4));
+  background: linear-gradient(225deg, var(--azul-2), var(--azul-4));
   border-radius: 0 3em 0 0;
   width: 15em;
   height: 4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .columnSlider {
@@ -715,9 +750,9 @@ footer {
   margin-top: 3%;
 }
 #historia {
-  background-color: var(--amarillo);
+  background-color: var(--azul-3-20);
   padding: 0% 10%;
-  color: var(--negro);
+  color: var(--azul-3);
   padding: 4em;
 }
 #historia h3{
@@ -817,7 +852,7 @@ height: 87vh;
     color: var(--negro);
   }
   .nav-icon-color {
-    color: var(--verde-dream);
+    color: var(--azul);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -994,4 +1029,116 @@ height: 87vh;
     width: 6em;
     height: 2em;
   }
+}
+
+/* Onboarding Popup Styles */
+.onboarding-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.onboarding-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.onboarding-content {
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.onboarding-video {
+  width: 100%;
+  max-width: 720px;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.close-onboarding {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--negro);
+  transition: color 0.3s ease;
+}
+
+.close-onboarding:hover {
+  color: var(--naranja);
+}
+
+.welcome-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--negro);
+  margin-bottom: 1rem;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.sound-toggle {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.sound-toggle:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.sound-toggle.loading {
+  opacity: 0.7;
+  cursor: wait;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.sound-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.onboarding-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 1rem auto;
 }
