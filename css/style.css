@@ -1142,3 +1142,49 @@ height: 87vh;
   max-width: 720px;
   margin: 1rem auto;
 }
+
+.language-selector {
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  padding: 4px;
+  margin-right: 1rem;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.language-selector a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.language-selector a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.language-selector a.active {
+  opacity: 1;
+}
+
+.language-selector a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    top: 5px;
+    right: 5px;
+  }
+
+  .language-selector a {
+    width: 28px;
+    height: 28px;
+  }
+}
