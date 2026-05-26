@@ -1,0 +1,416 @@
+/* ─────────────────────────────────────────
+   DreamGIS v2 — Nosotros Page
+───────────────────────────────────────── */
+
+/* ═══════════════════════════════
+   PAGE HERO (reuses .hero base)
+   title is smaller — not home XL
+═══════════════════════════════ */
+.nos-hero .hero__title {
+  font-size: clamp(32px, 4.5vw, 56px);
+  max-width: 720px;
+}
+
+.nos-hero .hero__sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.78);
+  max-width: 560px;
+  margin-top: var(--sp-lg);
+}
+
+
+/* ═══════════════════════════════
+   ABOUT (manifiesto)
+═══════════════════════════════ */
+.nos-about {
+  background: var(--canvas);
+  padding-block: var(--sp-sec);
+}
+
+.nos-about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xxl);
+  align-items: center;
+}
+
+.nos-about__text .eyebrow {
+  margin-bottom: var(--sp-lg);
+}
+
+.nos-about__text h2 {
+  color: var(--on-canvas);
+  margin-bottom: var(--sp-xl);
+}
+
+.nos-about__text p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--muted);
+  margin-bottom: var(--sp-lg);
+}
+
+.nos-about__text p:last-child {
+  margin-bottom: 0;
+}
+
+.nos-about__image {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.nos-about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* placeholder when real photo missing */
+.nos-about__image--placeholder {
+  background: var(--surface-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--sp-md);
+  border: 2px dashed var(--hairline);
+}
+
+.nos-about__image--placeholder span {
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+
+/* ═══════════════════════════════
+   MISIÓN & VISIÓN
+═══════════════════════════════ */
+.mv-section {
+  background: var(--surface-soft);
+  padding-block: var(--sp-sec);
+}
+
+.mv-section__head {
+  text-align: center;
+  margin-bottom: var(--sp-xxl);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+}
+
+.mv-card {
+  background: var(--canvas);
+  border: 1px solid var(--hairline-soft);
+  border-radius: var(--r-xl);
+  padding: var(--sp-xxl);
+  box-shadow: var(--shadow-card);
+}
+
+.mv-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--r-lg);
+  background: var(--primary-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sp-xl);
+  color: var(--primary);
+}
+
+.mv-card .eyebrow {
+  margin-bottom: var(--sp-md);
+}
+
+.mv-card__text {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+
+/* ═══════════════════════════════
+   VALORES
+═══════════════════════════════ */
+.valores-section {
+  background: var(--navy-4);
+  padding-block: var(--sp-sec);
+}
+
+.valores-section__head {
+  margin-bottom: var(--sp-xxl);
+}
+
+.valores-section__head h2 {
+  color: var(--on-dark);
+  max-width: 560px;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-xl);
+}
+
+.valor-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--surface-navy);
+  border-radius: var(--r-lg);
+  padding: var(--sp-xl);
+  transition: border-color var(--tr-color), background var(--tr-color);
+}
+
+.valor-card:hover {
+  background: rgba(255,255,255,.07);
+  border-color: var(--primary);
+}
+
+.valor-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--r-lg);
+  background: rgba(0,106,255,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sp-xl);
+  color: var(--primary);
+}
+
+.valor-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--on-dark);
+  margin-bottom: var(--sp-md);
+  line-height: 1.3;
+}
+
+.valor-card__desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.62);
+}
+
+
+/* ═══════════════════════════════
+   EQUIPO
+═══════════════════════════════ */
+.equipo-section {
+  background: var(--canvas);
+  padding-block: var(--sp-sec);
+}
+
+.equipo-section__head {
+  text-align: center;
+  margin-bottom: var(--sp-xxl);
+}
+
+.equipo-section__head h2 {
+  color: var(--on-canvas);
+}
+
+.equipo-section__sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 560px;
+  margin-inline: auto;
+  margin-top: var(--sp-lg);
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-xl);
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline: auto;
+  margin-bottom: var(--sp-lg);
+  background: var(--surface-soft);
+  border: 2px solid var(--hairline-soft);
+}
+
+.team-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* placeholder SVG avatar */
+.team-card__avatar--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted-soft);
+}
+
+.team-card__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--on-canvas);
+  margin-bottom: var(--sp-sm);
+}
+
+.team-card__role {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.3px;
+  margin-bottom: var(--sp-sm);
+}
+
+.team-card__bio {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+
+/* ═══════════════════════════════
+   CLIENTES
+═══════════════════════════════ */
+.clientes-section {
+  background: var(--surface-soft);
+  padding-block: var(--sp-sec);
+}
+
+.clientes-section__head {
+  text-align: center;
+  margin-bottom: var(--sp-xxl);
+}
+
+.clientes-section__head h2 {
+  color: var(--on-canvas);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--sp-lg);
+  align-items: center;
+}
+
+.cliente-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-lg);
+  background: var(--canvas);
+  border: 1px solid var(--hairline-soft);
+  border-radius: var(--r-lg);
+  transition: box-shadow var(--tr-shadow), opacity var(--tr-color);
+  opacity: 0.65;
+}
+
+.cliente-logo:hover {
+  box-shadow: var(--shadow-hover);
+  opacity: 1;
+}
+
+.cliente-logo img {
+  max-width: 100%;
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: filter var(--tr-color);
+}
+
+.cliente-logo:hover img {
+  filter: grayscale(0);
+}
+
+
+/* ═══════════════════════════════
+   CTA FINAL
+═══════════════════════════════ */
+.nos-cta {
+  background: linear-gradient(135deg, var(--navy-1) 0%, #000062 50%, var(--primary) 100%);
+  padding-block: var(--sp-sec-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nos-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/new-slider-min.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  mix-blend-mode: luminosity;
+}
+
+.nos-cta__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.nos-cta .eyebrow {
+  margin-bottom: var(--sp-lg);
+}
+
+.nos-cta h2 {
+  color: var(--on-dark);
+  font-size: clamp(28px, 4vw, 48px);
+  margin-bottom: var(--sp-lg);
+}
+
+.nos-cta__sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.72);
+  max-width: 480px;
+  margin-inline: auto;
+  margin-bottom: var(--sp-xxl);
+}
+
+
+/* ═══════════════════════════════
+   RESPONSIVE — NOSOTROS
+═══════════════════════════════ */
+@media (max-width: 1024px) {
+  .valores-grid  { grid-template-columns: repeat(2, 1fr); }
+  .equipo-grid   { grid-template-columns: repeat(2, 1fr); }
+  .clientes-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nos-about__inner {
+    grid-template-columns: 1fr;
+  }
+  .nos-about__image {
+    order: -1;   /* image above text on mobile */
+    border-radius: var(--r-lg);
+  }
+  .mv-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .valores-grid  { grid-template-columns: 1fr; }
+  .equipo-grid   { grid-template-columns: repeat(2, 1fr); }
+  .clientes-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 400px) {
+  .equipo-grid   { grid-template-columns: 1fr; }
+  .clientes-grid { grid-template-columns: repeat(2, 1fr); }
+}

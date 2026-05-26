@@ -1,0 +1,26 @@
+{
+  "name": "web-page",
+  "version": "1.0.0",
+  "description": "project web page DreamGIS 2023",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node scripts/validate-layout.js",
+    "validate:all": "node scripts/validate-layout.js $(ls *.html | tr '\\n' ' ')",
+    "serve": "python3 -m http.server 8787 --bind 127.0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreamgis/web-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dreamgis/web-page/issues"
+  },
+  "homepage": "https://github.com/Dreamgis/web-page#readme",
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}

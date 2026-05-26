@@ -1,235 +1,407 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DreamGIS - Soluciones Geoespaciales</title>
-    <link
-      rel="shortcut icon"
-      href="img/new-design/logo-dreamgis-isotipo-12.svg"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/landing.css" rel="stylesheet" />
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Transformation Banner -->
-    <div class="transformation-banner" data-aos="fade-down">
-      <div class="container">
-        <div class="banner-content">
-          <span class="banner-text" data-i18n="banner.transforming">Nos estamos transformando</span>
-          <img
-            src="img/new-design/logo-dreamgis-isotipo-12.svg"
-            alt="DreamGIS Transformation"
-            class="banner-icon"
-          />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DreamGIS — Soluciones geoespaciales empresariales. GIS, imágenes satelitales, ArcGIS y VertiGIS para energía, infraestructura, agroindustria y defensa." />
+  <title>DreamGIS — Soluciones Geoespaciales Empresariales</title>
+
+  <link rel="icon" href="img/new-design/logo-dreamgis-isotipo-12.svg" type="image/svg+xml" />
+
+  <!-- Montserrat from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- DreamGIS v2 -->
+  <link rel="stylesheet" href="css/v2-tokens.css" />
+  <link rel="stylesheet" href="css/v2-base.css" />
+  <link rel="stylesheet" href="css/v2-components.css" />
+  <link rel="stylesheet" href="css/v2-home.css" />
+</head>
+<body>
+
+<!-- ====================================================
+     NAV
+==================================================== -->
+<nav class="nav transparent" id="main-nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="DreamGIS — Inicio">
+      <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"      class="nav__link active" data-i18n="nav.home">Home</a></li>
+      <li><a href="nosotros.html"   class="nav__link"        data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="soluciones.html" class="nav__link"        data-i18n="nav.soluciones">Soluciones</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <div class="lang-sw" role="group" aria-label="Idioma">
+        <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+        <span class="lang-sw__sep" aria-hidden="true">|</span>
+        <button class="lang-sw__btn"        data-lang="en" onclick="setLang('en')">EN</button>
       </div>
-      <div class="language-selector">
-        <a href="#" onclick="i18next.changeLanguage('es')" class="active"
-          ><img src="img/flags/co.webp" alt="ES"
-        /></a>
-        <a href="#" onclick="i18next.changeLanguage('en')"
-          ><img src="img/flags/us.webp" alt="EN"
-        /></a>
+      <a href="contactenos.html" class="btn btn--primary btn--pill" data-i18n="nav.cta">Habla con un experto</a>
+    </div>
+
+    <button class="nav__hamburger" id="nav-toggle" aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav__drawer" id="nav-drawer">
+  <a href="index.html"      class="nav__link active" data-i18n="nav.home">Home</a>
+  <a href="nosotros.html"   class="nav__link"        data-i18n="nav.nosotros">Nosotros</a>
+  <a href="soluciones.html" class="nav__link"        data-i18n="nav.soluciones">Soluciones</a>
+  <div class="nav__actions">
+    <div class="lang-sw">
+      <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <span class="lang-sw__sep">|</span>
+      <button class="lang-sw__btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="contactenos.html" class="btn btn--primary btn--pill btn--sm" data-i18n="nav.cta">Habla con un experto</a>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img
+      src="img/new-slider-min.png"
+      alt="Vista satelital de territorio"
+      class="hero__bg-img"
+      loading="eager"
+    />
+    <div class="hero__overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <h1 class="hero__title">
+      <span data-i18n="hero.line1">Soluciones</span><br />
+      <span class="accent" data-i18n="hero.line2">geoespaciales</span><br />
+      <span data-i18n="hero.line3">empresariales</span>
+    </h1>
+    <div class="hero__cta-wrap">
+      <a href="soluciones.html" class="btn btn--outline-white btn--pill" data-i18n="hero.cta">
+        Ver nuestras soluciones
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SOLUCIONES
+==================================================== -->
+<section class="solutions" id="soluciones">
+  <div class="solutions__bg" style="background-image:url('img/section2-min.png')" aria-hidden="true"></div>
+
+  <div class="solutions__intro">
+    <span class="eyebrow" data-i18n="soluciones.eyebrow">Soluciones</span>
+    <h2 class="t-display-lg" data-i18n="soluciones.title">
+      Cuatro líneas que se potencian entre sí
+    </h2>
+    <p data-i18n="soluciones.description">
+      Combinamos servicios profesionales, distribución de datos y plataformas líderes para entregar
+      inteligencia geoespacial end-to-end a sectores como energía, infraestructura, agroindustria y defensa.
+    </p>
+  </div>
+
+  <div class="solutions__scroll">
+
+    <!-- Esri · ArcGIS -->
+    <article class="sol-card">
+      <div class="sol-card__body">
+        <span class="sol-card__label" data-i18n="soluciones.arcgis.label">Esri · ArcGIS</span>
+        <h3 class="sol-card__title" data-i18n="soluciones.arcgis.title">
+          Configuración, desarrollo y administración ArcGIS Enterprise
+        </h3>
+        <p class="sol-card__desc" data-i18n="soluciones.arcgis.description">
+          Implementamos, personalizamos y operamos ArcGIS Enterprise para organizaciones que necesitan
+          una plataforma GIS robusta, segura y escalable en sus propios ambientes.
+        </p>
+        <a href="soluciones.html#arcgis" class="sol-card__cta" data-i18n="soluciones.arcgis.cta">Más sobre ArcGIS</a>
+      </div>
+      <div class="sol-card__image">
+        <img src="img/coolmap1-min.png" alt="ArcGIS Enterprise" loading="lazy" />
+      </div>
+    </article>
+
+    <!-- Vantor -->
+    <article class="sol-card">
+      <div class="sol-card__body">
+        <span class="sol-card__label" data-i18n="soluciones.vantor.label">Vantor</span>
+        <h3 class="sol-card__title" data-i18n="soluciones.vantor.title">
+          Suscripción y venta por demanda de soluciones geoespaciales
+        </h3>
+        <p class="sol-card__desc" data-i18n="soluciones.vantor.description">
+          Distribuimos el portafolio Vantor: acceso flexible a herramientas, datos y capacidades GIS
+          mediante modelos de suscripción o compra por demanda.
+        </p>
+        <!-- TODO: replace with Vantor logo once available at img/partners/vantor-logo.* -->
+        <a href="soluciones.html#vantor" class="sol-card__cta" data-i18n="soluciones.vantor.cta">Más sobre Vantor</a>
+      </div>
+      <div class="sol-card__image">
+        <img src="img/coolmap3-min.png" alt="Vantor — suscripción GIS" loading="lazy" />
+      </div>
+    </article>
+
+    <!-- Syspective -->
+    <article class="sol-card">
+      <div class="sol-card__body">
+        <span class="sol-card__label" data-i18n="soluciones.syspective.label">Syspective</span>
+        <h3 class="sol-card__title" data-i18n="soluciones.syspective.title">
+          Imágenes SAR como servicio — monitoreo continuo desde el espacio
+        </h3>
+        <p class="sol-card__desc" data-i18n="soluciones.syspective.description">
+          Distribuimos la constelación SAR de Syspective (Japón) en modo DaaS: datos radar de apertura
+          sintética para detección de cambios, subsidencia y movimiento de suelos.
+        </p>
+        <!-- TODO: replace with Syspective logo once available at img/partners/syspective-logo.* -->
+        <a href="soluciones.html#syspective" class="sol-card__cta" data-i18n="soluciones.syspective.cta">Más sobre Syspective</a>
+      </div>
+      <div class="sol-card__image">
+        <img src="img/coolmap2-min.png" alt="Syspective SAR DaaS" loading="lazy" />
+      </div>
+    </article>
+
+    <!-- VertiGIS -->
+    <article class="sol-card">
+      <div class="sol-card__body">
+        <span class="sol-card__label" data-i18n="soluciones.vertigis.label">VertiGIS</span>
+        <h3 class="sol-card__title" data-i18n="soluciones.vertigis.title">
+          VertiGIS Studio y Neo — soluciones verticales sobre ArcGIS
+        </h3>
+        <p class="sol-card__desc" data-i18n="soluciones.vertigis.description">
+          Potenciamos ArcGIS con la suite VertiGIS: Studio para apps sin código y Neo para flujos
+          de inspección, mantenimiento y gestión de activos en campo.
+        </p>
+        <a href="soluciones.html#vertigis" class="sol-card__cta" data-i18n="soluciones.vertigis.cta">Más sobre VertiGIS</a>
+      </div>
+      <div class="sol-card__image">
+        <img src="img/coomap4-min.png" alt="VertiGIS Studio y Neo" loading="lazy" />
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CIFRAS
+==================================================== -->
+<section class="cifras">
+  <div class="container">
+    <div class="cifras__head">
+      <span class="eyebrow" data-i18n="cifras.eyebrow">Cifras</span>
+      <h2 class="t-display-md" data-i18n="cifras.title">
+        Más de una década transformando decisiones con datos
+      </h2>
+    </div>
+
+    <div class="cifras__grid">
+
+      <div class="stat-block">
+        <div class="stat-block__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+        </div>
+        <span class="stat-block__value" data-i18n="cifras.stat1.value">10+</span>
+        <span class="stat-block__label" data-i18n="cifras.stat1.label">Años de experiencia</span>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 11.75A1.25 1.25 0 1 0 9 14.25 1.25 1.25 0 0 0 9 11.75zm6 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 13.05 10 15.42 10c.78 0 1.52-.2 2.17-.55.25.81.41 1.67.41 2.55 0 4.41-3.59 8-8 8z"/>
+          </svg>
+        </div>
+        <span class="stat-block__value" data-i18n="cifras.stat2.value">200+</span>
+        <span class="stat-block__label" data-i18n="cifras.stat2.label">Proyectos ejecutados</span>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </div>
+        <span class="stat-block__value" data-i18n="cifras.stat3.value">50+</span>
+        <span class="stat-block__label" data-i18n="cifras.stat3.label">Clientes activos</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     ALIADOS
+==================================================== -->
+<section class="aliados">
+  <div class="container">
+    <div class="aliados__head">
+      <span class="eyebrow eyebrow--primary" data-i18n="aliados.eyebrow">Aliados</span>
+      <h2 class="t-display-md" data-i18n="aliados.title">
+        Cuatro partners tecnológicos. Una propuesta integrada.
+      </h2>
+    </div>
+
+    <div class="aliados__track-wrap">
+      <div class="aliados__track" id="aliados-track">
+
+        <!-- Esri -->
+        <article class="ally-card">
+          <img src="img/logo-esri-min.png" alt="Esri" class="ally-card__logo" loading="lazy" />
+          <h3 class="ally-card__title" data-i18n="aliados.esri.title">Esri · ArcGIS</h3>
+          <p class="ally-card__desc" data-i18n="aliados.esri.description">
+            Partner autorizado Esri. Configuramos, desarrollamos y administramos ArcGIS Enterprise
+            para organizaciones que requieren plataforma GIS de grado corporativo.
+          </p>
+          <a href="soluciones.html#arcgis" class="btn btn--outline btn--sm" data-i18n="aliados.esri.cta">Conocer más</a>
+        </article>
+
+        <!-- Vantor — featured -->
+        <article class="ally-card ally-card--featured">
+          <!-- TODO: img/partners/vantor-logo.svg once available -->
+          <div class="ally-card__logo-placeholder">Vantor</div>
+          <h3 class="ally-card__title" data-i18n="aliados.vantor.title">Vantor</h3>
+          <p class="ally-card__desc" data-i18n="aliados.vantor.description">
+            Distribuidor oficial Vantor en Colombia y Latam. Acceso flexible por suscripción o
+            por demanda a herramientas y datos del portafolio Vantor.
+          </p>
+          <a href="soluciones.html#vantor" class="btn btn--outline-white btn--sm" data-i18n="aliados.vantor.cta">Conocer más</a>
+        </article>
+
+        <!-- Syspective -->
+        <article class="ally-card">
+          <!-- TODO: img/partners/syspective-logo.svg once available -->
+          <div class="ally-card__logo-placeholder ally-card__logo-placeholder--dark">Syspective</div>
+          <h3 class="ally-card__title" data-i18n="aliados.syspective.title">Syspective</h3>
+          <p class="ally-card__desc" data-i18n="aliados.syspective.description">
+            Distribuidor exclusivo Syspective para América Latina. Datos SAR en modo DaaS:
+            detección de cambios, subsidencia y monitoreo bajo cobertura nubosa.
+          </p>
+          <a href="soluciones.html#syspective" class="btn btn--outline btn--sm" data-i18n="aliados.syspective.cta">Conocer más</a>
+        </article>
+
+        <!-- VertiGIS -->
+        <article class="ally-card">
+          <img src="img/logo-vertigis.svg" alt="VertiGIS" class="ally-card__logo" loading="lazy" />
+          <h3 class="ally-card__title" data-i18n="aliados.vertigis.title">VertiGIS</h3>
+          <p class="ally-card__desc" data-i18n="aliados.vertigis.description">
+            Partner certificado VertiGIS. Implementamos Studio y Neo sobre ArcGIS para inspección,
+            mantenimiento y gestión de activos en Oil &amp; Gas, utilities e infraestructura.
+          </p>
+          <a href="soluciones.html#vertigis" class="btn btn--outline btn--sm" data-i18n="aliados.vertigis.cta">Conocer más</a>
+        </article>
+
       </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row align-items-center min-vh-100">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img
-              src="img/new-design/logo-dreamgis-vertical-7.svg"
-              alt="DreamGIS Logo"
-              class="hero-logo mb-4"
-            />
-            <h1 data-i18n="title">
-              Transformamos datos en decisiones inteligentes
-            </h1>
-            <p class="lead" data-i18n="subtitle">
-              Expertos en soluciones geoespaciales para empresas y gobierno
-            </p>
-            <a href="contactenos.html" class="cta-button" data-i18n="cta"
-              >Contáctanos</a
-            >
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="hero-image">
-              <div class="floating-cards">
-                <div class="card-item" data-aos="zoom-in" data-aos-delay="200">
-                  <div class="video-container">
-                    <video class="transition-video" autoplay muted playsinline>
-                      <source
-                        src="img/new-design/logo-transition.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                    <button class="sound-toggle" aria-label="Toggle sound">
-                      <svg class="sound-icon muted" viewBox="0 0 24 24">
-                        <path
-                          d="M3.63 3.63a.996.996 0 000 1.41L7.29 8.7 7 9H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3l3.29 3.29c.63.63 1.71.18 1.71-.71v-4.17l4.18 4.18c-.49.37-1.02.68-1.6.91-.36.15-.58.53-.58.92 0 .72.73 1.18 1.39.91.8-.33 1.55-.77 2.22-1.31l1.34 1.34a.996.996 0 101.41-1.41L5.05 3.63c-.39-.39-1.02-.39-1.42 0zM19 12c0 .82-.15 1.61-.41 2.34l1.53 1.53c.56-1.17.88-2.48.88-3.87 0-3.83-2.4-7.11-5.78-8.4-.59-.23-1.22.23-1.22.86v.19c0 .38.25.71.61.85C17.18 6.54 19 9.06 19 12zm-8.71-6.29l-.17.17L12 7.76V6.41c0-.89-1.08-1.33-1.71-.7zM16.5 12c0-1.77-1.02-3.29-2.5-4.03v1.79l2.48 2.48c.01-.08.02-.16.02-.24z"
-                        />
-                      </svg>
-                      <svg class="sound-icon unmuted" viewBox="0 0 24 24">
-                        <path
-                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="aliados__nav">
+      <button class="c-arrow c-arrow--dark" id="aliados-prev" aria-label="Anterior">&#8592;</button>
+      <button class="c-arrow c-arrow--dark" id="aliados-next" aria-label="Siguiente">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     ANTES / DESPUÉS
+==================================================== -->
+<section class="before-after">
+  <div class="before-after__images">
+    <div class="before-after__panel">
+      <img src="img/slider1-min.png" alt="Vista satelital antes" loading="lazy" />
+      <span class="before-after__badge" data-i18n="antesdespues.antes">Antes</span>
+    </div>
+    <div class="before-after__panel">
+      <img src="img/coolmap2-min.png" alt="Vista satelital después" loading="lazy" />
+      <span class="before-after__badge" data-i18n="antesdespues.despues">Después</span>
+    </div>
+  </div>
+  <div class="before-after__caption container">
+    <h2 class="t-display-lg" data-i18n="antesdespues.title">
+      Resultados medibles que transforman territorios y decisiones
+    </h2>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     MARQUEE
+==================================================== -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Soluciones geoespaciales&nbsp;&nbsp;·&nbsp;&nbsp;Inteligencia territorial&nbsp;&nbsp;·&nbsp;&nbsp;Transformamos datos en decisiones&nbsp;&nbsp;·&nbsp;&nbsp;We understand your world&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+    <span>Soluciones geoespaciales&nbsp;&nbsp;·&nbsp;&nbsp;Inteligencia territorial&nbsp;&nbsp;·&nbsp;&nbsp;Transformamos datos en decisiones&nbsp;&nbsp;·&nbsp;&nbsp;We understand your world&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer class="footer">
+  <div class="footer__main container">
+    <div class="footer__logo">
+      <a href="index.html" aria-label="DreamGIS — Inicio">
+        <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.nosotros">Nosotros</span>
+        <ul>
+          <li><a href="nosotros.html#equipo"      data-i18n="footer.equipo">Equipo</a></li>
+          <li><a href="nosotros.html#aliados"     data-i18n="footer.aliados">Aliados</a></li>
+          <li><a href="nosotros.html#testimonios" data-i18n="footer.testimonios">Testimonios</a></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-section">
-      <div class="container">
-        <h2
-          class="section-title text-center"
-          data-aos="fade-up"
-          data-i18n="partners"
-        >
-          Nuestros Aliados Estratégicos
-        </h2>
-        <div class="row g-5">
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="img/logo-esri-min.png"
-              alt="ESRI Partner"
-              class="partner-logo"
-            />
-          </div>
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="img/new-design/Maxar_yellow_logo.svg"
-              alt="MAXAR Partner"
-              class="partner-logo"
-            />
-          </div>
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <img
-              src="img/logo-vertigis.png"
-              alt="VERTIGIS Partner"
-              class="partner-logo"
-            />
-          </div>
-        </div>
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.servicios">Soluciones</span>
+        <ul>
+          <li><a href="soluciones.html#arcgis"      data-i18n="footer.arcgis">Esri · ArcGIS</a></li>
+          <li><a href="soluciones.html#vantor"       data-i18n="footer.vantor">Vantor</a></li>
+          <li><a href="soluciones.html#syspective"   data-i18n="footer.syspective">Syspective</a></li>
+          <li><a href="soluciones.html#vertigis"     data-i18n="footer.vertigis">VertiGIS</a></li>
+        </ul>
       </div>
-    </section>
+    </nav>
 
-    <!-- Products Section -->
-    <section class="products-section">
-      <div class="container">
-        <h2
-          class="section-title text-center"
-          data-aos="fade-up"
-          data-i18n="products"
-        >
-          Nuestros Productos
-        </h2>
-        <div class="row g-5">
-          <div
-            class="col-md-12 text-center mb-4 overflow-visible"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <a
-              href="https://folia.dreamgis.com/"
-              target="_blank"
-              class="product-link"
-            >
-              <div class="product-card">
-                <img
-                  src="img/new-design/DreamGIS-FOLIA.png"
-                  alt="FOLIA Product"
-                  class="partner-logo"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="footer__cta">
+      <a href="contactenos.html" class="btn btn--primary btn--pill" data-i18n="footer.cta">Contáctanos</a>
+    </div>
+  </div>
 
-    <!-- Contact CTA Section -->
-    <section class="cta-section">
-      <div class="container text-center">
-        <h2 data-i18n="ready" data-aos="fade-up">¿Listo para empezar?</h2>
-        <p
-          class="lead mb-4"
-          data-i18n="discover"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Descubre cómo podemos ayudarte a potenciar tu negocio con soluciones
-          geoespaciales
-        </p>
-        <a
-          href="contactenos.html"
-          class="cta-button"
-          data-i18n="cta"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          >Contáctanos ahora</a
-        >
-      </div>
-    </section>
+  <div class="footer__legal container">
+    <a href="#" data-i18n="footer.privacy">Política de privacidad</a>
+    <a href="#" data-i18n="footer.terms">Términos y condiciones</a>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/company/dreamgis" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="img/icon-linkedin.svg" alt="LinkedIn" width="22" height="22" />
+      </a>
+    </div>
+  </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="./js/i18n.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
 
-      // Sound toggle functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const video = document.querySelector(".transition-video");
-        const soundToggle = document.querySelector(".sound-toggle");
+<!-- ====================================================
+     SCRIPTS
+==================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="js/v2-main.js"></script>
 
-        soundToggle.addEventListener("click", function () {
-          const isMuted = video.muted;
-          video.muted = !isMuted;
-          soundToggle.setAttribute("data-muted", video.muted);
-        });
-      });
-    </script>
-    <script>
-      initializeI18n();
-    </script>
-  </body>
+</body>
 </html>

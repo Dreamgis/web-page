@@ -1,0 +1,81 @@
+/* ─────────────────────────────────────────
+   DreamGIS Design System v2 — Tokens
+   Source: DESING.md + Figma proposal
+───────────────────────────────────────── */
+:root {
+  /* ── Brand Colors ── */
+  --primary:          #006aff;
+  --primary-hover:    #0058d4;
+  --primary-active:   #0047ab;
+  --primary-disabled: #99c3ff;
+  --primary-subtle:   #cce1ff;
+
+  /* Teal accent (Figma proposal) */
+  --teal:             #00c4b4;
+  --teal-dim:         rgba(0, 196, 180, 0.15);
+
+  /* ── Navy Palette ── */
+  --navy-1:           #0b0721;   /* deepest — hero, footer-dark */
+  --navy-2:           #000062;   /* pure navy — gradients */
+  --navy-4:           #14152c;   /* warm dark — cifras, legal */
+  --navy-5:           #2f3d91;   /* slate navy */
+  --surface-navy:     #333658;   /* dark card fill/border */
+
+  /* ── Surfaces ── */
+  --canvas:           #ffffff;
+  --surface-soft:     #f2f2f2;
+
+  /* ── Text ── */
+  --on-dark:          #ffffff;
+  --on-canvas:        #0b0721;
+  --body-text:        #14152c;
+  --muted:            #666882;
+  --muted-soft:       #999bab;
+
+  /* ── Borders ── */
+  --hairline:         #cccdd5;
+  --hairline-soft:    #e8e8ed;
+  --border-strong:    #999bab;
+
+  /* ── Semantic ── */
+  --error:            #d93025;
+  --success:          #1a8a3c;
+
+  /* ── Typography ── */
+  --font: 'Montserrat', -apple-system, system-ui, 'Helvetica Neue', sans-serif;
+
+  /* ── Spacing (4px base) ── */
+  --sp-xxs:   2px;
+  --sp-xs:    4px;
+  --sp-sm:    8px;
+  --sp-md:    12px;
+  --sp-base:  16px;
+  --sp-lg:    24px;
+  --sp-xl:    32px;
+  --sp-xxl:   48px;
+  --sp-sec:   80px;
+  --sp-sec-lg: 120px;
+
+  /* ── Radii ── */
+  --r-xs:   2px;
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   16px;
+  --r-xxl:  24px;
+  --r-full: 9999px;
+
+  /* ── Layout ── */
+  --max-w:    1280px;
+  --pad-x:    clamp(20px, 5vw, 80px);
+  --nav-h:    72px;
+
+  /* ── Transitions ── */
+  --tr-color:  150ms ease;
+  --tr-shadow: 200ms ease;
+  --tr-transform: 200ms ease;
+
+  /* ── Shadows ── */
+  --shadow-card:  0 2px 8px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.06);
+  --shadow-hover: 0 4px 16px rgba(0,106,255,.12), 0 12px 32px rgba(0,0,0,.10);
+}
