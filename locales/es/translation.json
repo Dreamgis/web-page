@@ -1,18 +1,157 @@
 {
-  "title": "Transformamos datos en decisiones inteligentes",
-  "subtitle": "Expertos en soluciones geoespaciales para empresas y gobierno",
-  "cta": "Contáctanos",
-  "products": "Nuestros Productos",
-  "partners": "Nuestros Aliados Estratégicos",
-  "ready": "¿Listo para empezar?",
-  "discover": "Descubre cómo podemos ayudarte a potenciar tu negocio con soluciones geoespaciales",
   "nav": {
-    "home": "Inicio"
+    "home":       "Inicio",
+    "nosotros":   "Nosotros",
+    "soluciones": "Soluciones",
+    "cta":        "Habla con un experto"
   },
-  "banner": {
-    "transforming": "Nos estamos transformando"
+  "hero": {
+    "line1": "Soluciones",
+    "line2": "geoespaciales",
+    "line3": "empresariales",
+    "cta":   "Ver nuestras soluciones"
+  },
+  "soluciones": {
+    "eyebrow":     "Soluciones",
+    "title":       "Cuatro líneas que se potencian entre sí",
+    "description": "Combinamos servicios profesionales, distribución de datos y plataformas líderes para entregar inteligencia geoespacial end-to-end a sectores como energía, infraestructura, agroindustria y defensa.",
+    "hero_sub":    "Un ecosistema integrado donde cada línea amplifica el valor de las demás.",
+    "arcgis": {
+      "label":       "Esri · ArcGIS",
+      "badge":       "OFFICIAL PARTNER · ESRI",
+      "title":       "Configuración, desarrollo y administración ArcGIS Enterprise",
+      "description": "Implementamos, personalizamos y operamos ArcGIS Enterprise para organizaciones que necesitan una plataforma GIS robusta, segura y escalable en sus propios ambientes.",
+      "f1": "Implementación y configuración de ArcGIS Enterprise on-premise o nube privada",
+      "f2": "Desarrollo de aplicaciones web y móviles sobre la plataforma Esri",
+      "f3": "Administración continua, monitoreo y actualizaciones de versiones",
+      "f4": "Integración con sistemas corporativos ERP, EAM y SCADA",
+      "f5": "Capacitación técnica y soporte especializado",
+      "cta":      "Más sobre ArcGIS",
+      "cta_long": "Habla con un especialista ArcGIS"
+    },
+    "vantor": {
+      "label":       "Vantor",
+      "badge":       "OFFICIAL DISTRIBUTOR · VANTOR",
+      "title":       "Suscripción y venta por demanda de soluciones geoespaciales",
+      "description": "Distribuimos el portafolio Vantor: acceso flexible a herramientas, datos y capacidades GIS mediante modelos de suscripción o compra por demanda, adaptados al ciclo de negocio.",
+      "f1": "Acceso por suscripción mensual o anual al portafolio Vantor",
+      "f2": "Venta por demanda de herramientas y datasets específicos",
+      "f3": "Licenciamiento flexible adaptado al ciclo presupuestal",
+      "f4": "Onboarding, capacitación y soporte incluido",
+      "f5": "Cobertura para Colombia y América Latina",
+      "cta":      "Más sobre Vantor",
+      "cta_long": "Habla con un especialista Vantor"
+    },
+    "syspective": {
+      "label":       "Syspective",
+      "badge":       "OFFICIAL DISTRIBUTOR · SYSPECTIVE",
+      "title":       "Imágenes SAR como servicio — monitoreo continuo desde el espacio",
+      "description": "Distribuimos la constelación SAR de Syspective (Japón) en modo DaaS: datos radar de apertura sintética para detección de cambios, subsidencia, humedad y movimiento de suelos, sin importar nubes ni hora del día.",
+      "f1": "Datos SAR en modo DaaS: entrega bajo demanda o por suscripción",
+      "f2": "Detección de cambios en superficie con revisita de días",
+      "f3": "Monitoreo de subsidencia y deformación del suelo (mm de precisión)",
+      "f4": "Análisis de humedad de suelos para agroindustria y medio ambiente",
+      "f5": "Operación 24/7: penetra nubes, funciona de noche",
+      "cta":      "Más sobre Syspective",
+      "cta_long": "Habla con un especialista SAR"
+    },
+    "vertigis": {
+      "label":       "VertiGIS",
+      "badge":       "CERTIFIED PARTNER · VERTIGIS",
+      "title":       "VertiGIS Studio y Neo — soluciones verticales sobre ArcGIS",
+      "description": "Potenciamos ArcGIS con la suite VertiGIS: Studio para configurar aplicaciones sin código y Neo para flujos de trabajo de inspección, mantenimiento y gestión de activos en campo.",
+      "f1": "VertiGIS Studio: configuración de apps GIS sin código sobre ArcGIS",
+      "f2": "VertiGIS Neo: inspección, mantenimiento y gestión de activos en campo",
+      "f3": "Órdenes de trabajo, rutas y reportes offline-first",
+      "f4": "Sectores: Oil & Gas, utilities, infraestructura, transporte",
+      "f5": "Integración nativa con ArcGIS Enterprise y ArcGIS Online",
+      "cta":      "Más sobre VertiGIS",
+      "cta_long": "Habla con un especialista VertiGIS"
+    },
+    "integracion_eyebrow": "Ecosistema integrado",
+    "integracion_title":   "Las cuatro líneas trabajan juntas",
+    "integracion_sub":     "ArcGIS Enterprise es el núcleo. Vantor amplía capacidades. Syspective alimenta con datos satelitales. VertiGIS extiende hacia el campo. Juntos forman una inteligencia geoespacial completa.",
+    "int_r1_title": "Plataforma base",
+    "int_r1_desc":  "ArcGIS Enterprise como núcleo de la infraestructura GIS corporativa.",
+    "int_r2_title": "Datos y herramientas",
+    "int_r2_desc":  "Vantor amplía capacidades con acceso flexible a datos y software.",
+    "int_r3_title": "Inteligencia espacial",
+    "int_r3_desc":  "Syspective alimenta el ecosistema con datos SAR de alta resolución.",
+    "int_r4_title": "Aplicaciones de campo",
+    "int_r4_desc":  "VertiGIS lleva ArcGIS a inspección, mantenimiento y activos en campo.",
+    "cta_title": "¿Cuál es su reto territorial?",
+    "cta_sub":   "Cuéntenos el desafío y diseñamos la combinación de líneas que su organización necesita.",
+    "cta_btn":   "Habla con un experto"
+  },
+  "cifras": {
+    "eyebrow": "Cifras",
+    "title":   "Más de una década transformando decisiones con datos",
+    "stat1":   { "value": "10+",  "label": "Años de experiencia" },
+    "stat2":   { "value": "200+", "label": "Proyectos ejecutados" },
+    "stat3":   { "value": "50+",  "label": "Clientes activos" }
+  },
+  "aliados": {
+    "eyebrow": "Aliados",
+    "title":   "Cuatro partners tecnológicos. Una propuesta integrada.",
+    "esri":       { "title": "Esri · ArcGIS",  "description": "Partner autorizado Esri. Configuramos, desarrollamos y administramos ArcGIS Enterprise para organizaciones que requieren plataforma GIS de grado corporativo.",                                                                                  "cta": "Conocer más" },
+    "vantor":     { "title": "Vantor",          "description": "Distribuidor oficial Vantor en Colombia y Latam. Ofrecemos acceso flexible por suscripción o por demanda a herramientas y datos del portafolio Vantor.",                                                                                          "cta": "Conocer más" },
+    "syspective": { "title": "Syspective",      "description": "Distribuidor exclusivo Syspective para América Latina. Datos SAR en modo DaaS: detección de cambios, subsidencia, humedad de suelos y monitoreo nocturno o bajo cobertura nubosa.",                                                              "cta": "Conocer más" },
+    "vertigis":   { "title": "VertiGIS",        "description": "Partner certificado VertiGIS. Implementamos Studio y Neo sobre ArcGIS para flujos de inspección, mantenimiento y gestión de activos en sectores de Oil & Gas, utilities e infraestructura.",                                                       "cta": "Conocer más" }
+  },
+  "antesdespues": {
+    "antes":  "Antes",
+    "despues": "Después",
+    "title":  "Resultados medibles que transforman territorios y decisiones"
+  },
+  "nosotros": {
+    "eyebrow":       "Nosotros",
+    "hero_title":    "Inteligencia geoespacial con propósito",
+    "hero_sub":      "Combinamos tecnología, experiencia y alianzas estratégicas para transformar datos territoriales en decisiones que mueven organizaciones.",
+    "about_eyebrow": "Nuestra historia",
+    "about_title":   "Una década transformando territorios con datos",
+    "about_p1":      "DreamGIS nació en Bogotá con una convicción: los datos geoespaciales son la capa de inteligencia que le falta a las decisiones estratégicas de las grandes organizaciones. Con más de diez años de experiencia, hemos consolidado un portafolio de cuatro líneas complementarias que permiten a nuestros clientes ver, entender y actuar sobre sus territorios con precisión.",
+    "about_p2":      "Hoy operamos en sectores de alta complejidad territorial —energía, infraestructura, agroindustria y defensa— y somos referentes en la distribución y administración de las plataformas geoespaciales más robustas del mercado.",
+    "mision_eyebrow":"Misión",
+    "mision_text":   "Transformar datos geoespaciales en decisiones estratégicas para organizaciones que operan en territorios complejos, a través de tecnología de punta, talento especializado y alianzas de clase mundial.",
+    "vision_eyebrow":"Visión",
+    "vision_text":   "Ser el referente regional de inteligencia geoespacial empresarial en América Latina al 2030, donde cada proyecto DreamGIS contribuye al desarrollo sostenible y la toma de decisiones informada sobre el territorio.",
+    "valores_eyebrow":"Valores",
+    "valores_title": "Los principios que guían cada proyecto",
+    "v1_title": "Precisión técnica",
+    "v1_desc":  "Cada implementación, cada capa de datos, cada línea de código refleja el rigor técnico que nuestros clientes esperan de un socio geoespacial de clase mundial.",
+    "v2_title": "Impacto real",
+    "v2_desc":  "No entregamos software: entregamos capacidad de decisión. El éxito de un proyecto se mide en el impacto que genera sobre el territorio y el negocio.",
+    "v3_title": "Confianza estratégica",
+    "v3_desc":  "Construimos relaciones de largo plazo. Somos el socio que permanece cuando la complejidad aumenta y las decisiones son más críticas.",
+    "v4_title": "Innovación continua",
+    "v4_desc":  "Datos SAR, plataformas no-code e inteligencia artificial redefinen la geoespacialidad. Nos adelantamos a esos cambios para que nuestros clientes siempre tengan la mejor herramienta.",
+    "equipo_eyebrow":"Equipo",
+    "equipo_title":  "El talento detrás de los datos",
+    "equipo_sub":    "Ingenieros, analistas y arquitectos GIS con experiencia en proyectos de alta complejidad para los sectores más exigentes de América Latina.",
+    "clientes_eyebrow":"Clientes",
+    "clientes_title":  "Organizaciones que confían en nuestra inteligencia geoespacial",
+    "cta_eyebrow": "¿Listo para el siguiente nivel?",
+    "cta_title":   "Hablemos de su territorio",
+    "cta_sub":     "Cuéntenos el reto y encontramos la solución geoespacial que necesita.",
+    "cta_btn":     "Habla con un experto"
+  },
+  "contacto": {
+    "eyebrow":    "Contacto",
+    "hero_title": "Hablemos de su territorio",
+    "hero_sub":   "Cuéntenos el reto y un especialista de DreamGIS se pondrá en contacto con usted en menos de 24 horas."
   },
   "footer": {
-    "copyright": "© 2023 DreamGIS. Todos los derechos reservados."
+    "nosotros":    "Nosotros",
+    "equipo":      "Equipo",
+    "aliados":     "Aliados",
+    "servicios":   "Soluciones",
+    "arcgis":      "Esri · ArcGIS",
+    "vantor":      "Vantor",
+    "syspective":  "Syspective",
+    "vertigis":    "VertiGIS",
+    "cta":         "Contáctanos",
+    "privacy":     "Política de privacidad",
+    "terms":       "Términos y condiciones",
+    "copyright":   "© 2025 DreamGIS. Todos los derechos reservados."
   }
 }

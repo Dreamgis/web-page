@@ -1,144 +1,460 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DreamGIS - nosotos</title>
-  <link rel="shortcut icon" href="img/logo-dreamgis-min.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal@4"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+  <meta name="description" content="DreamGIS — Quiénes somos. Más de una década transformando territorios con inteligencia geoespacial en América Latina." />
+  <title>DreamGIS — Nosotros</title>
 
+  <link rel="icon" href="img/new-design/logo-dreamgis-isotipo-12.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/v2-tokens.css" />
+  <link rel="stylesheet" href="css/v2-base.css" />
+  <link rel="stylesheet" href="css/v2-components.css" />
+  <link rel="stylesheet" href="css/v2-home.css" />
+  <link rel="stylesheet" href="css/v2-nosotros.css" />
+</head>
 <body>
-  <!---------------------------------------------header------------------------------------------------->
-  <header>
-    <!--------------------------------------------barra navegación-------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-custom-color">
-      <div class="container-fluid">
-        <img class="img-nav" src="img/new-design/logo-dreamgis.svg" alt="DreamGIS Logo" onclick="goHomePage()" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-icon-color"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+
+<!-- ====================================================
+     NAV
+==================================================== -->
+<nav class="nav transparent" id="main-nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="DreamGIS — Inicio">
+      <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"      class="nav__link"        data-i18n="nav.home">Home</a></li>
+      <li><a href="nosotros.html"   class="nav__link active" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="soluciones.html" class="nav__link"        data-i18n="nav.soluciones">Soluciones</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <div class="lang-sw" role="group" aria-label="Idioma">
+        <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+        <span class="lang-sw__sep" aria-hidden="true">|</span>
+        <button class="lang-sw__btn"        data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+    </div>
+
+    <button class="nav__hamburger" id="nav-toggle" aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav__drawer" id="nav-drawer">
+  <a href="index.html"      class="nav__link"        data-i18n="nav.home">Home</a>
+  <a href="nosotros.html"   class="nav__link active" data-i18n="nav.nosotros">Nosotros</a>
+  <a href="soluciones.html" class="nav__link"        data-i18n="nav.soluciones">Soluciones</a>
+  <div class="nav__actions">
+    <div class="lang-sw">
+      <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <span class="lang-sw__sep">|</span>
+      <button class="lang-sw__btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill btn--sm" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero nos-hero" id="hero">
+  <div class="hero__bg">
+    <img
+      src="img/new-slider-min.png"
+      alt="Vista aérea de territorio"
+      class="hero__bg-img"
+      loading="eager"
+    />
+    <div class="hero__overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow" data-i18n="nosotros.eyebrow">Nosotros</p>
+    <h1 class="hero__title" data-i18n="nosotros.hero_title">
+      Inteligencia geoespacial con propósito
+    </h1>
+    <p class="hero__sub" data-i18n="nosotros.hero_sub">
+      Combinamos tecnología, experiencia y alianzas estratégicas para transformar datos territoriales en decisiones que mueven organizaciones.
+    </p>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     ACERCA DE (manifiesto)
+==================================================== -->
+<section class="nos-about" id="acerca">
+  <div class="nos-about__inner container">
+
+    <div class="nos-about__text">
+      <p class="eyebrow" data-i18n="nosotros.about_eyebrow">Nuestra historia</p>
+      <h2 class="t-display-lg" data-i18n="nosotros.about_title">
+        Una década transformando territorios con datos
+      </h2>
+      <p data-i18n="nosotros.about_p1">
+        DreamGIS nació en Bogotá con una convicción: los datos geoespaciales son la capa de inteligencia que le falta a las decisiones estratégicas de las grandes organizaciones. Con más de diez años de experiencia, hemos consolidado un portafolio de cuatro líneas complementarias que permiten a nuestros clientes ver, entender y actuar sobre sus territorios con precisión.
+      </p>
+      <p data-i18n="nosotros.about_p2">
+        Hoy operamos en sectores de alta complejidad territorial —energía, infraestructura, agroindustria y defensa— y somos referentes en la distribución y administración de las plataformas geoespaciales más robustas del mercado.
+      </p>
+    </div>
+
+    <figure class="nos-about__image">
+      <img src="img/nosotros-equipo-min.jpg" alt="Ilustración estilo caricatura del equipo DreamGIS" loading="lazy" />
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     MISIÓN & VISIÓN
+==================================================== -->
+<section class="mv-section" id="mision">
+  <div class="container">
+
+    <div class="mv-grid">
+
+      <!-- Misión -->
+      <article class="mv-card">
+        <div class="mv-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="12" r="4"  stroke="currentColor" stroke-width="1.8"/>
+            <line x1="12" y1="2"  x2="12" y2="6"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="12" y1="18" x2="12" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="2"  y1="12" x2="6"  y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="18" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  row-width-nav">
-            <li class="nav-item 1 r-texto">
-              <a class="nav-link" aria-current="page" href="./inicio.html">INICIO</a>
-            </li>
-            <li class="nav-item 4 r-texto">
-              <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
-            </li>
-            <li class="nav-item 2 r-texto">
-              <a class="nav-link" href="./socios.html">SOCIOS</a>
-            </li>
-            <!-- <li class="nav-item 3 r-texto">
-              <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-            </li> -->
-            <li class="nav-item 5 r-texto">
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
-            </li>
-          </ul>
-          </li>
-          </ul>
         </div>
+        <p class="eyebrow" data-i18n="nosotros.mision_eyebrow">Misión</p>
+        <p class="mv-card__text" data-i18n="nosotros.mision_text">
+          Transformar datos geoespaciales en decisiones estratégicas para organizaciones que operan en territorios complejos, a través de tecnología de punta, talento especializado y alianzas de clase mundial.
+        </p>
+      </article>
+
+      <!-- Visión -->
+      <article class="mv-card">
+        <div class="mv-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5C7 5 2.73 8.11 1 12.5C2.73 16.89 7 20 12 20C17 20 21.27 16.89 23 12.5C21.27 8.11 17 5 12 5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <circle cx="12" cy="12.5" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <p class="eyebrow" data-i18n="nosotros.vision_eyebrow">Visión</p>
+        <p class="mv-card__text" data-i18n="nosotros.vision_text">
+          Ser el referente regional de inteligencia geoespacial empresarial en América Latina al 2030, donde cada proyecto DreamGIS contribuye al desarrollo sostenible y la toma de decisiones informada sobre el territorio.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     VALORES
+==================================================== -->
+<section class="valores-section" id="valores">
+  <div class="container">
+
+    <div class="valores-section__head">
+      <p class="eyebrow" data-i18n="nosotros.valores_eyebrow">Valores</p>
+      <h2 class="t-display-md" data-i18n="nosotros.valores_title">Los principios que guían cada proyecto</h2>
+    </div>
+
+    <div class="valores-grid">
+
+      <!-- 1: Precisión técnica -->
+      <article class="valor-card">
+        <div class="valor-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+            <line x1="12" y1="3"  x2="12" y2="7"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="3"  y1="12" x2="7"  y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="17" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="valor-card__title" data-i18n="nosotros.v1_title">Precisión técnica</h3>
+        <p  class="valor-card__desc"  data-i18n="nosotros.v1_desc">
+          Cada implementación, cada capa de datos, cada línea de código refleja el rigor técnico que nuestros clientes esperan de un socio geoespacial de clase mundial.
+        </p>
+      </article>
+
+      <!-- 2: Impacto real -->
+      <article class="valor-card">
+        <div class="valor-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="3,17 8,11 13,14 21,5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="17,5 21,5 21,9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="valor-card__title" data-i18n="nosotros.v2_title">Impacto real</h3>
+        <p  class="valor-card__desc"  data-i18n="nosotros.v2_desc">
+          No entregamos software: entregamos capacidad de decisión. El éxito de un proyecto se mide en el impacto que genera sobre el territorio y el negocio.
+        </p>
+      </article>
+
+      <!-- 3: Confianza estratégica -->
+      <article class="valor-card">
+        <div class="valor-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L4 7V13C4 17.42 7.58 21 12 21C16.42 21 20 17.42 20 13V7L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <polyline points="9,12 11,14 15,10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="valor-card__title" data-i18n="nosotros.v3_title">Confianza estratégica</h3>
+        <p  class="valor-card__desc"  data-i18n="nosotros.v3_desc">
+          Construimos relaciones de largo plazo. Somos el socio que permanece cuando la complejidad aumenta y las decisiones son más críticas.
+        </p>
+      </article>
+
+      <!-- 4: Innovación continua -->
+      <article class="valor-card">
+        <div class="valor-card__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.4 8.8L21 9.3L16.2 13.6L17.7 20L12 16.6L6.3 20L7.8 13.6L3 9.3L9.6 8.8L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="valor-card__title" data-i18n="nosotros.v4_title">Innovación continua</h3>
+        <p  class="valor-card__desc"  data-i18n="nosotros.v4_desc">
+          Datos SAR, plataformas no-code e inteligencia artificial redefinen la geoespacialidad. Nos adelantamos a esos cambios para que nuestros clientes siempre tengan la mejor herramienta.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     EQUIPO
+==================================================== -->
+<section class="equipo-section" id="equipo">
+  <div class="container">
+
+    <div class="equipo-section__head">
+      <p class="eyebrow" data-i18n="nosotros.equipo_eyebrow">Equipo</p>
+      <h2 class="t-display-md" data-i18n="nosotros.equipo_title">El talento detrás de los datos</h2>
+      <p class="equipo-section__sub" data-i18n="nosotros.equipo_sub">
+        Ingenieros, analistas y arquitectos GIS con experiencia en proyectos de alta complejidad para los sectores más exigentes de América Latina.
+      </p>
+    </div>
+
+    <div class="equipo-grid">
+
+      <article class="team-card">
+        <div class="team-card__avatar">
+          <img src="img/team/ceo.jpg" alt="Juan Camilo Gómez" loading="lazy" />
+        </div>
+        <p class="team-card__name">Juan Camilo Gómez</p>
+        <p class="team-card__role">CEO</p>
+        <p class="team-card__bio">Visión estratégica y liderazgo organizacional para escalar la propuesta de valor geoespacial de DreamGIS en América Latina.</p>
+        <a class="team-card__linkedin" href="https://www.linkedin.com/in/jcgomezesguerra/" target="_blank" rel="noopener" aria-label="LinkedIn de Juan Camilo Gómez">
+          <img src="img/icon-linkedin.svg" alt="" width="20" height="20" />
+        </a>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card__avatar">
+          <img src="img/team/director-cientifico.jpg" alt="Carlos Pedraza" loading="lazy" />
+        </div>
+        <p class="team-card__name">Carlos Pedraza</p>
+        <p class="team-card__role">Director Científico</p>
+        <p class="team-card__bio">Dirección científica y metodológica de los proyectos de datos geoespaciales, garantizando rigor técnico e innovación aplicada.</p>
+        <a class="team-card__linkedin" href="https://www.linkedin.com/in/carlos-pedraza-phd-06b27a85/" target="_blank" rel="noopener" aria-label="LinkedIn de Carlos Pedraza">
+          <img src="img/icon-linkedin.svg" alt="" width="20" height="20" />
+        </a>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card__avatar">
+          <img src="img/team/arquitectura.jpg" alt="Fabian Heredia" loading="lazy" />
+        </div>
+        <p class="team-card__name">Fabian Heredia</p>
+        <p class="team-card__role">Arquitectura de Soluciones</p>
+        <p class="team-card__bio">Diseño de arquitecturas GIS robustas y escalables, alineando tecnología con los objetivos estratégicos de cada cliente.</p>
+        <a class="team-card__linkedin" href="https://www.linkedin.com/in/fabianherediar/" target="_blank" rel="noopener" aria-label="LinkedIn de Fabian Heredia">
+          <img src="img/icon-linkedin.svg" alt="" width="20" height="20" />
+        </a>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card__avatar">
+          <img src="img/team/lider-ventas.jpg" alt="Jose Barrera" loading="lazy" />
+        </div>
+        <p class="team-card__name">Jose Barrera</p>
+        <p class="team-card__role">Líder de Ventas</p>
+        <p class="team-card__bio">Liderazgo comercial y desarrollo de relaciones estratégicas para conectar la propuesta de DreamGIS con nuevos sectores y clientes.</p>
+        <a class="team-card__linkedin" href="https://www.linkedin.com/in/jose-barrera-2945371a8/" target="_blank" rel="noopener" aria-label="LinkedIn de Jose Barrera">
+          <img src="img/icon-linkedin.svg" alt="" width="20" height="20" />
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CLIENTES
+==================================================== -->
+<section class="clientes-section" id="clientes">
+  <div class="container">
+
+    <div class="clientes-section__head">
+      <p class="eyebrow" data-i18n="nosotros.clientes_eyebrow">Clientes</p>
+      <h2 class="t-display-md" data-i18n="nosotros.clientes_title">
+        Organizaciones que confían en nuestra inteligencia geoespacial
+      </h2>
+    </div>
+
+    <div class="clientes-grid">
+      <a href="#" class="cliente-logo" aria-label="Agencia Nacional de Minería">
+        <img src="logos/anm-min.png"          alt="ANM"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Bancolombia">
+        <img src="logos/bancolombia-min.png"  alt="Bancolombia"  loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Cenit">
+        <img src="logos/cenit-min.png"        alt="Cenit"        loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Enel">
+        <img src="logos/enel-min.png"         alt="Enel"         loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Fedegan">
+        <img src="logos/fedegan-min.png"      alt="Fedegan"      loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Invias">
+        <img src="logos/invias-min.png"       alt="Invias"       loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Experian">
+        <img src="logos/experian-min.png"     alt="Experian"     loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Fasecolda">
+        <img src="logos/fasecolda-min.png"    alt="Fasecolda"    loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Gas Oriente">
+        <img src="logos/gas-oriente-min.png"  alt="Gas Oriente"  loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="WWF">
+        <img src="logos/wwf-min.png"          alt="WWF"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="The Nature Conservancy">
+        <img src="logos/tnc-min.png"          alt="TNC"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="WCS Colombia">
+        <img src="logos/wcs-min.png"          alt="WCS"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="OEA">
+        <img src="logos/oea-min.png"          alt="OEA"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Audubon Society">
+        <img src="logos/audubon-min.png"      alt="Audubon"      loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="CAEM">
+        <img src="logos/caem-min.png"         alt="CAEM"         loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="Astra">
+        <img src="logos/astra-min.png"        alt="Astra"        loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="PEI">
+        <img src="logos/pei-min.png"          alt="PEI"          loading="lazy" />
+      </a>
+      <a href="#" class="cliente-logo" aria-label="ESANT">
+        <img src="logos/esant-min.png"        alt="ESANT"        loading="lazy" />
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CTA FINAL
+==================================================== -->
+<section class="nos-cta" id="contacto">
+  <div class="nos-cta__inner container">
+    <p class="eyebrow" data-i18n="nosotros.cta_eyebrow">¿Listo para el siguiente nivel?</p>
+    <h2 data-i18n="nosotros.cta_title">Hablemos de su territorio</h2>
+    <p class="nos-cta__sub" data-i18n="nosotros.cta_sub">
+      Cuéntenos el reto y encontramos la solución geoespacial que necesita.
+    </p>
+    <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill" data-i18n="nosotros.cta_btn" target="_blank" rel="noopener">
+      Habla con un experto
+    </a>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer class="footer">
+  <div class="footer__main container">
+    <div class="footer__logo">
+      <a href="index.html" aria-label="DreamGIS — Inicio">
+        <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.nosotros">Nosotros</span>
+        <ul>
+          <li><a href="nosotros.html#equipo" data-i18n="footer.equipo">Equipo</a></li>
+          <li><a href="index.html#aliados"   data-i18n="footer.aliados">Aliados</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.servicios">Soluciones</span>
+        <ul>
+          <li><a href="soluciones.html#arcgis"    data-i18n="footer.arcgis">Esri · ArcGIS</a></li>
+          <li><a href="soluciones.html#vantor"    data-i18n="footer.vantor">Vantor</a></li>
+          <li><a href="soluciones.html#syspective" data-i18n="footer.syspective">Syspective</a></li>
+          <li><a href="soluciones.html#vertigis"  data-i18n="footer.vertigis">VertiGIS</a></li>
+        </ul>
       </div>
     </nav>
-  </header>
-  <!---------------------------------------------section------------------------------------------------->
-  <section id="historia" data-aos="fade" data-aos-offset="500" data-aos-easing="ease-in-sine">
-    <div class="row justify-content-around align-items-center">
-      <div class="col-xs-8 col-sm-4">
-        <img src="img/dreamgis1-min.png" class="img-fluid" srcset="" />
-      </div>
-      <div class="col-xs-8 col-sm-8">
-        <div class="row mv-padding">
-          <h3 class="text-center">HISTORIA</h3>
-          <div class="justified-text">
-            En 2014 nos unimos un grupo de amigos que teníamos la idea que la tecnología y los datos
-            podían ayudar a los clientes a tomar decisiones y administrar el territorio, conscientes de
-            las necesidades de nuestros clientes y del cambio tecnológico definimos que nuestra
-            empresa estaría en beta lo cual nos definiría en constante evolución adicional a
-            ello planteamos que a través de los mapas le representaríamos el mundo al mundo,
-            hace 4 años decidimos no estar más en beta, nuestro equipo viajo, estudio y hoy estamos
-            seguros que tenemos el equipo con el que su empresa puede contar y confiar, modificamos
-            nuestro logo y slogan y hoy podemos decir que entendemos el mundo de nuestros clientes y
-            podemos resolver sus requerimientos y también podemos plantear nuevas ideas que hagan exitosos
-            a nuestros clientes.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="misionVision">
-    <div class="row align-items-center row-width" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 mv-padding">
-        <h3>MISIÓN</h3>
-        <p class="justified-text">
-          Nuestra misión es proporcionar servicios geográficos de alta calidad y desarrollar plataformas GIS
-          avanzadas que permitan a nuestros clientes aprovechar al máximo la información geoespacial.
-          Nos esforzamos por ayudar a las organizaciones a tomar decisiones informadas,
-          mejorar la eficiencia operativa y abordar desafíos complejos utilizando tecnologías geoespaciales de
-          vanguardia.
-          Trabajamos con integridad, pasión y compromiso para satisfacer las necesidades cambiantes de nuestros
-          clientes y contribuir al desarrollo sostenible de las comunidades y el medio ambiente.
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-        <img src="img/option1-min.png" alt="" class="img-fluid img-margin-top" srcset="" />
-      </div>
-    </div>
-    <div class="row align-items-center row-width" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-        <img src="img/elevation3-min.png" alt="" class="img-fluid img-margin-top" srcset="" />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 mv-padding">
-        <h3>VISIÓN</h3>
-        <p class="justified-text">
-          Ser líderes en el campo de los servicios geográficos y desarrollo de plataformas GIS a
-          nivel global, brindando soluciones innovadoras que transformen datos geoespaciales en conocimientos
-          valiosos para nuestros clientes.
-          Queremos ser reconocidos por nuestra excelencia técnica, compromiso con la sostenibilidad y nuestra
-          contribución a un mundo más informado y eficiente
-        </p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="row-width">
-      <div class="footerRow">
-        <!-- <img class="" width="60" src="img/logo-dreamgis-horizontal-min.png" alt="" /> -->
-        <a href="https://www.linkedin.com/company/dreamgis" target="_blank">
-          <img width="20" height="20" src="img/icon-linkedin.svg" alt="LinkedIn">
-        </a>
-        <div id="copyright">© 2023 DreamGIS. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-  <script>
-    goHomePage = () => {
-      window.location.href = "./inicio.html";
-    }
-  </script>
-  <script>
-    ScrollReveal().reveal('header', { delay: 200 });
-    ScrollReveal().reveal('#misionVision', { delay: 300 });
-  </script>
-  <script>
-    AOS.init();
-  </script>
-</body>
 
+    <div class="footer__cta">
+      <a href="contactenos.html" class="btn btn--primary btn--pill" data-i18n="footer.cta">Contáctanos</a>
+    </div>
+  </div>
+
+  <div class="footer__legal container">
+    <a href="#" data-i18n="footer.privacy">Política de privacidad</a>
+    <a href="#" data-i18n="footer.terms">Términos y condiciones</a>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/company/dreamgis" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="img/icon-linkedin.svg" alt="LinkedIn" width="22" height="22" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ====================================================
+     SCRIPTS
+==================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="js/v2-main.js"></script>
+
+</body>
 </html>

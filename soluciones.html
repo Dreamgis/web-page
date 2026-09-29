@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DreamGIS — Cuatro líneas geoespaciales integradas: Esri ArcGIS Enterprise, Vantor, Syspective SAR y VertiGIS Studio & Neo." />
+  <title>DreamGIS — Soluciones</title>
+
+  <link rel="icon" href="img/new-design/logo-dreamgis-isotipo-12.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/v2-tokens.css" />
+  <link rel="stylesheet" href="css/v2-base.css" />
+  <link rel="stylesheet" href="css/v2-components.css" />
+  <link rel="stylesheet" href="css/v2-home.css" />
+  <link rel="stylesheet" href="css/v2-soluciones.css" />
+</head>
+<body>
+
+<!-- ====================================================
+     NAV
+==================================================== -->
+<nav class="nav transparent" id="main-nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="DreamGIS — Inicio">
+      <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"      class="nav__link"        data-i18n="nav.home">Home</a></li>
+      <li><a href="nosotros.html"   class="nav__link"        data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="soluciones.html" class="nav__link active" data-i18n="nav.soluciones">Soluciones</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-sw" role="group" aria-label="Idioma">
+        <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+        <span class="lang-sw__sep" aria-hidden="true">|</span>
+        <button class="lang-sw__btn"        data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+    </div>
+    <button class="nav__hamburger" id="nav-toggle" aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__drawer" id="nav-drawer">
+  <a href="index.html"      class="nav__link"        data-i18n="nav.home">Home</a>
+  <a href="nosotros.html"   class="nav__link"        data-i18n="nav.nosotros">Nosotros</a>
+  <a href="soluciones.html" class="nav__link active" data-i18n="nav.soluciones">Soluciones</a>
+  <div class="nav__actions">
+    <div class="lang-sw">
+      <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <span class="lang-sw__sep">|</span>
+      <button class="lang-sw__btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill btn--sm" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero sol-hero" id="hero">
+  <div class="hero__bg">
+    <img
+      src="img/new-slider-min.png"
+      alt="Vista satelital de territorio"
+      class="hero__bg-img"
+      loading="eager"
+    />
+    <div class="hero__overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow" data-i18n="soluciones.eyebrow">Soluciones</p>
+    <h1 class="hero__title" data-i18n="soluciones.title">
+      Cuatro líneas que se potencian entre sí
+    </h1>
+    <p class="hero__sub" data-i18n="soluciones.hero_sub">
+      Un ecosistema integrado donde cada línea amplifica el valor de las demás.
+    </p>
+
+    <!-- Quick-nav to each solution -->
+    <nav class="sol-hero__nav" aria-label="Ir a solución">
+      <a href="#arcgis"     class="sol-hero__pill"><span class="sol-hero__pill-dot" aria-hidden="true"></span> Esri · ArcGIS</a>
+      <a href="#vantor"     class="sol-hero__pill"><span class="sol-hero__pill-dot" aria-hidden="true"></span> Vantor</a>
+      <a href="#syspective" class="sol-hero__pill"><span class="sol-hero__pill-dot" aria-hidden="true"></span> Syspective</a>
+      <a href="#vertigis"   class="sol-hero__pill"><span class="sol-hero__pill-dot" aria-hidden="true"></span> VertiGIS</a>
+    </nav>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SOLUCIÓN 1 — ArcGIS
+     light · text left · image right
+==================================================== -->
+<section class="sol-section sol-section--light" id="arcgis">
+  <div class="sol-section__inner container">
+
+    <div class="sol-section__text">
+      <div class="partner-badge">
+        <span class="partner-badge__label" data-i18n="soluciones.arcgis.badge">OFFICIAL PARTNER · ESRI</span>
+        <img src="img/logo-esri-min.png" alt="Esri" class="partner-badge__logo" />
+      </div>
+      <h2 data-i18n="soluciones.arcgis.title">
+        Configuración, desarrollo y administración ArcGIS Enterprise
+      </h2>
+      <p class="sol-section__desc" data-i18n="soluciones.arcgis.description">
+        Implementamos, personalizamos y operamos ArcGIS Enterprise para organizaciones que necesitan una plataforma GIS robusta, segura y escalable en sus propios ambientes.
+      </p>
+      <ul class="sol-features" aria-label="Capacidades ArcGIS">
+        <li data-i18n="soluciones.arcgis.f1">Implementación y configuración de ArcGIS Enterprise on-premise o nube privada</li>
+        <li data-i18n="soluciones.arcgis.f2">Desarrollo de aplicaciones web y móviles sobre la plataforma Esri</li>
+        <li data-i18n="soluciones.arcgis.f3">Administración continua, monitoreo y actualizaciones de versiones</li>
+        <li data-i18n="soluciones.arcgis.f4">Integración con sistemas corporativos ERP, EAM y SCADA</li>
+        <li data-i18n="soluciones.arcgis.f5">Capacitación técnica y soporte especializado</li>
+      </ul>
+      <a href="contactenos.html?sol=arcgis" class="btn btn--primary btn--pill" data-i18n="soluciones.arcgis.cta_long">
+        Habla con un especialista ArcGIS
+      </a>
+    </div>
+
+    <figure class="sol-section__media">
+      <img src="img/coolmap1-min.png" alt="ArcGIS Enterprise — plataforma GIS corporativa" loading="lazy" />
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SOLUCIÓN 2 — Vantor
+     soft · image left · text right
+==================================================== -->
+<section class="sol-section sol-section--soft" id="vantor">
+  <div class="sol-section__inner sol-section__inner--flip container">
+
+    <div class="sol-section__text">
+      <div class="partner-badge">
+        <span class="partner-badge__label" data-i18n="soluciones.vantor.badge">OFFICIAL DISTRIBUTOR · VANTOR</span>
+        <!-- RECURSO PENDIENTE: img/partners/vantor-logo.svg -->
+        <span class="partner-badge__logo--text" aria-label="Vantor">Vantor</span>
+      </div>
+      <h2 data-i18n="soluciones.vantor.title">
+        Suscripción y venta por demanda de soluciones geoespaciales
+      </h2>
+      <p class="sol-section__desc" data-i18n="soluciones.vantor.description">
+        Distribuimos el portafolio Vantor: acceso flexible a herramientas, datos y capacidades GIS mediante modelos de suscripción o compra por demanda, adaptados al ciclo de negocio.
+      </p>
+      <ul class="sol-features" aria-label="Capacidades Vantor">
+        <li data-i18n="soluciones.vantor.f1">Acceso por suscripción mensual o anual al portafolio Vantor</li>
+        <li data-i18n="soluciones.vantor.f2">Venta por demanda de herramientas y datasets específicos</li>
+        <li data-i18n="soluciones.vantor.f3">Licenciamiento flexible adaptado al ciclo presupuestal</li>
+        <li data-i18n="soluciones.vantor.f4">Onboarding, capacitación y soporte incluido</li>
+        <li data-i18n="soluciones.vantor.f5">Cobertura para Colombia y América Latina</li>
+      </ul>
+      <a href="contactenos.html?sol=vantor" class="btn btn--primary btn--pill" data-i18n="soluciones.vantor.cta_long">
+        Habla con un especialista Vantor
+      </a>
+    </div>
+
+    <figure class="sol-section__media">
+      <img src="img/coolmap3-min.png" alt="Vantor — soluciones GIS flexibles" loading="lazy" />
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SOLUCIÓN 3 — Syspective
+     dark · text left · image right
+==================================================== -->
+<section class="sol-section sol-section--dark" id="syspective">
+  <div class="sol-section__inner container">
+
+    <div class="sol-section__text">
+      <div class="partner-badge">
+        <span class="partner-badge__label partner-badge__label--dark" data-i18n="soluciones.syspective.badge">OFFICIAL DISTRIBUTOR · SYSPECTIVE</span>
+        <!-- RECURSO PENDIENTE: img/partners/syspective-logo.svg -->
+        <span class="partner-badge__logo--text-dark" aria-label="Syspective">Syspective</span>
+      </div>
+      <h2 data-i18n="soluciones.syspective.title">
+        Imágenes SAR como servicio — monitoreo continuo desde el espacio
+      </h2>
+      <p class="sol-section__desc" data-i18n="soluciones.syspective.description">
+        Distribuimos la constelación SAR de Syspective (Japón) en modo DaaS: datos radar de apertura sintética para detección de cambios, subsidencia, humedad y movimiento de suelos.
+      </p>
+      <ul class="sol-features" aria-label="Capacidades Syspective">
+        <li data-i18n="soluciones.syspective.f1">Datos SAR en modo DaaS: entrega bajo demanda o por suscripción</li>
+        <li data-i18n="soluciones.syspective.f2">Detección de cambios en superficie con revisita de días</li>
+        <li data-i18n="soluciones.syspective.f3">Monitoreo de subsidencia y deformación del suelo (mm de precisión)</li>
+        <li data-i18n="soluciones.syspective.f4">Análisis de humedad de suelos para agroindustria y medio ambiente</li>
+        <li data-i18n="soluciones.syspective.f5">Operación 24/7: penetra nubes, funciona de noche</li>
+      </ul>
+      <a href="contactenos.html?sol=syspective" class="btn btn--outline-white btn--pill" data-i18n="soluciones.syspective.cta_long">
+        Habla con un especialista SAR
+      </a>
+    </div>
+
+    <figure class="sol-section__media">
+      <img src="img/coolmap2-min.png" alt="Syspective — imágenes SAR desde el espacio" loading="lazy" />
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     SOLUCIÓN 4 — VertiGIS
+     light · image left · text right
+==================================================== -->
+<section class="sol-section sol-section--light" id="vertigis">
+  <div class="sol-section__inner sol-section__inner--flip container">
+
+    <div class="sol-section__text">
+      <div class="partner-badge">
+        <span class="partner-badge__label" data-i18n="soluciones.vertigis.badge">CERTIFIED PARTNER · VERTIGIS</span>
+        <img src="img/logo-vertigis.svg" alt="VertiGIS" class="partner-badge__logo" />
+      </div>
+      <h2 data-i18n="soluciones.vertigis.title">
+        VertiGIS Studio y Neo — soluciones verticales sobre ArcGIS
+      </h2>
+      <p class="sol-section__desc" data-i18n="soluciones.vertigis.description">
+        Potenciamos ArcGIS con la suite VertiGIS: Studio para configurar aplicaciones sin código y Neo para flujos de trabajo de inspección, mantenimiento y gestión de activos en campo.
+      </p>
+      <ul class="sol-features" aria-label="Capacidades VertiGIS">
+        <li data-i18n="soluciones.vertigis.f1">VertiGIS Studio: configuración de apps GIS sin código sobre ArcGIS</li>
+        <li data-i18n="soluciones.vertigis.f2">VertiGIS Neo: inspección, mantenimiento y gestión de activos en campo</li>
+        <li data-i18n="soluciones.vertigis.f3">Órdenes de trabajo, rutas y reportes offline-first</li>
+        <li data-i18n="soluciones.vertigis.f4">Sectores: Oil &amp; Gas, utilities, infraestructura, transporte</li>
+        <li data-i18n="soluciones.vertigis.f5">Integración nativa con ArcGIS Enterprise y ArcGIS Online</li>
+      </ul>
+      <a href="contactenos.html?sol=vertigis" class="btn btn--primary btn--pill" data-i18n="soluciones.vertigis.cta_long">
+        Habla con un especialista VertiGIS
+      </a>
+    </div>
+
+    <figure class="sol-section__media">
+      <img src="img/coomap4-min.png" alt="VertiGIS Studio — aplicaciones GIS sin código" loading="lazy" />
+    </figure>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     INTEGRACIÓN — ecosistema de 4 líneas
+==================================================== -->
+<section class="integracion" id="integracion">
+  <div class="container">
+
+    <div class="integracion__head">
+      <p class="eyebrow" data-i18n="soluciones.integracion_eyebrow">Ecosistema integrado</p>
+      <h2 class="t-display-md" data-i18n="soluciones.integracion_title">Las cuatro líneas trabajan juntas</h2>
+      <p class="integracion__sub" data-i18n="soluciones.integracion_sub">
+        ArcGIS Enterprise es el núcleo. Vantor amplía capacidades. Syspective alimenta con datos satelitales. VertiGIS extiende hacia el campo. Juntos forman una inteligencia geoespacial completa.
+      </p>
+    </div>
+
+    <div class="integracion__grid">
+
+      <!-- 1 ArcGIS -->
+      <article class="int-card">
+        <div class="int-card__num">01</div>
+        <div class="int-card__icon" aria-hidden="true">
+          <!-- Layers / platform icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="int-card__partner">Esri · ArcGIS</p>
+        <h3 class="int-card__title" data-i18n="soluciones.int_r1_title">Plataforma base</h3>
+        <p  class="int-card__desc"  data-i18n="soluciones.int_r1_desc">ArcGIS Enterprise como núcleo de la infraestructura GIS corporativa.</p>
+      </article>
+
+      <!-- 2 Vantor -->
+      <article class="int-card">
+        <div class="int-card__num">02</div>
+        <div class="int-card__icon" aria-hidden="true">
+          <!-- Database / data icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3 5V19C3 20.66 7.03 22 12 22C16.97 22 21 20.66 21 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M3 12C3 13.66 7.03 15 12 15C16.97 15 21 13.66 21 12" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <p class="int-card__partner">Vantor</p>
+        <h3 class="int-card__title" data-i18n="soluciones.int_r2_title">Datos y herramientas</h3>
+        <p  class="int-card__desc"  data-i18n="soluciones.int_r2_desc">Vantor amplía capacidades con acceso flexible a datos y software.</p>
+      </article>
+
+      <!-- 3 Syspective -->
+      <article class="int-card">
+        <div class="int-card__num">03</div>
+        <div class="int-card__icon" aria-hidden="true">
+          <!-- Satellite / radar icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M6.3 6.3C4.86 7.74 4 9.77 4 12C4 14.23 4.86 16.26 6.3 17.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M17.7 6.3C19.14 7.74 20 9.77 20 12C20 14.23 19.14 16.26 17.7 17.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M3 3C1.11 4.89 0 7.31 0 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" transform="translate(3,2)"/>
+            <path d="M15 3C16.89 4.89 18 7.31 18 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" transform="translate(3,2)"/>
+          </svg>
+        </div>
+        <p class="int-card__partner">Syspective</p>
+        <h3 class="int-card__title" data-i18n="soluciones.int_r3_title">Inteligencia espacial</h3>
+        <p  class="int-card__desc"  data-i18n="soluciones.int_r3_desc">Syspective alimenta el ecosistema con datos SAR de alta resolución.</p>
+      </article>
+
+      <!-- 4 VertiGIS -->
+      <article class="int-card">
+        <div class="int-card__num">04</div>
+        <div class="int-card__icon" aria-hidden="true">
+          <!-- Field / mobile icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="9" y1="18" x2="15" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="9" y1="7"  x2="15" y2="7"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="9" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="int-card__partner">VertiGIS</p>
+        <h3 class="int-card__title" data-i18n="soluciones.int_r4_title">Aplicaciones de campo</h3>
+        <p  class="int-card__desc"  data-i18n="soluciones.int_r4_desc">VertiGIS lleva ArcGIS a inspección, mantenimiento y activos en campo.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CTA FINAL
+==================================================== -->
+<section class="sol-cta" id="contacto">
+  <div class="container">
+    <p class="eyebrow" style="margin-bottom:var(--sp-lg)" data-i18n="soluciones.eyebrow">Soluciones</p>
+    <h2 data-i18n="soluciones.cta_title">¿Cuál es su reto territorial?</h2>
+    <p class="sol-cta__sub" data-i18n="soluciones.cta_sub">
+      Cuéntenos el desafío y diseñamos la combinación de líneas que su organización necesita.
+    </p>
+    <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill" data-i18n="soluciones.cta_btn" target="_blank" rel="noopener">
+      Habla con un experto
+    </a>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer class="footer">
+  <div class="footer__main container">
+    <div class="footer__logo">
+      <a href="index.html" aria-label="DreamGIS — Inicio">
+        <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+      </a>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.nosotros">Nosotros</span>
+        <ul>
+          <li><a href="nosotros.html#equipo" data-i18n="footer.equipo">Equipo</a></li>
+          <li><a href="index.html#aliados"   data-i18n="footer.aliados">Aliados</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.servicios">Soluciones</span>
+        <ul>
+          <li><a href="soluciones.html#arcgis"     data-i18n="footer.arcgis">Esri · ArcGIS</a></li>
+          <li><a href="soluciones.html#vantor"     data-i18n="footer.vantor">Vantor</a></li>
+          <li><a href="soluciones.html#syspective" data-i18n="footer.syspective">Syspective</a></li>
+          <li><a href="soluciones.html#vertigis"   data-i18n="footer.vertigis">VertiGIS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__cta">
+      <a href="contactenos.html" class="btn btn--primary btn--pill" data-i18n="footer.cta">Contáctanos</a>
+    </div>
+  </div>
+  <div class="footer__legal container">
+    <a href="#" data-i18n="footer.privacy">Política de privacidad</a>
+    <a href="#" data-i18n="footer.terms">Términos y condiciones</a>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/company/dreamgis" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="img/icon-linkedin.svg" alt="LinkedIn" width="22" height="22" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ====================================================
+     SCRIPTS
+==================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="js/v2-main.js"></script>
+
+</body>
+</html>

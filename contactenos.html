@@ -1,131 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DreamGIS</title>
-    <link
-      rel="shortcut icon"
-      href="img/new-design/logo-dreamgis-isotipo-12.svg"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DreamGIS — Contáctanos. Hablemos de su territorio y encontremos la solución geoespacial que su organización necesita." />
+  <title>DreamGIS — Contáctanos</title>
 
-  <body>
-    <header>
-      <!--------------------------------------------barra navegación-------------------------------------->
-      <nav class="navbar navbar-expand-lg navbar-custom-color">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <img
-            class="img-nav"
-            src="img/new-design/logo-dreamgis.svg"
-            alt="DreamGIS Logo"
-            onclick="goHomePage()"
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="bi bi-list nav-icon-color"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav row-width-nav">
-              <li class="nav-item 1 r-texto">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="./index.html"
-                  data-i18n="nav.home"
-                  >INICIO</a
-                >
-              </li>
-            </ul>
-            <div class="language-selector">
-              <a href="#" onclick="i18next.changeLanguage('es')" class="active">
-                <img src="img/flags/co.webp" alt="ES" />
-              </a>
-              <a href="#" onclick="i18next.changeLanguage('en')">
-                <img src="img/flags/us.webp" alt="EN" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!---------------------------------------------section------------------------------------------------->
-    <section id="contacto-form" class="">
-      <!-- <img src="img/section1-min.png" class="img-fluid" srcset="" /> -->
-      <iframe src="https://arcg.is/nObzn0" frameborder="0"></iframe>
-      <!-- <img src="img/section2-min.png" class="img-fluid" srcset="" /> -->
-    </section>
-    <footer>
-      <div class="row-width">
-        <div class="footerRow">
-          <!-- <img class="" width="60" src="img/logo-dreamgis-horizontal-min.png" alt="" /> -->
-          <a href="https://www.linkedin.com/company/dreamgis" target="_blank">
-            <img
-              width="20"
-              height="20"
-              src="img/icon-linkedin.svg"
-              alt="LinkedIn"
-            />
-          </a>
-          <div id="copyright" data-i18n="footer.copyright">
-            © 2023 DreamGIS. All rights reserved.
-          </div>
-        </div>
+  <link rel="icon" href="img/new-design/logo-dreamgis-isotipo-12.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/v2-tokens.css" />
+  <link rel="stylesheet" href="css/v2-base.css" />
+  <link rel="stylesheet" href="css/v2-components.css" />
+  <link rel="stylesheet" href="css/v2-home.css" />
+  <link rel="stylesheet" href="css/v2-contacto.css" />
+</head>
+<body>
+
+<!-- ====================================================
+     NAV
+==================================================== -->
+<nav class="nav transparent" id="main-nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="DreamGIS — Inicio">
+      <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"      class="nav__link" data-i18n="nav.home">Home</a></li>
+      <li><a href="nosotros.html"   class="nav__link" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="soluciones.html" class="nav__link" data-i18n="nav.soluciones">Soluciones</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <div class="lang-sw" role="group" aria-label="Idioma">
+        <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+        <span class="lang-sw__sep" aria-hidden="true">|</span>
+        <button class="lang-sw__btn"        data-lang="en" onclick="setLang('en')">EN</button>
       </div>
-    </footer>
-    <script>
-      goHomePage = () => {
-        window.location.href = "./index.html";
-      };
-    </script>
-    <script>
-      ScrollReveal().reveal("header", { delay: 200 });
-      ScrollReveal().reveal("#contacto-form", { delay: 300 });
-    </script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="./js/i18n.js"></script>
-    <script>
-      initializeI18n();
-    </script>
-  </body>
+      <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+    </div>
+
+    <button class="nav__hamburger" id="nav-toggle" aria-controls="nav-drawer" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav__drawer" id="nav-drawer">
+  <a href="index.html"      class="nav__link" data-i18n="nav.home">Home</a>
+  <a href="nosotros.html"   class="nav__link" data-i18n="nav.nosotros">Nosotros</a>
+  <a href="soluciones.html" class="nav__link" data-i18n="nav.soluciones">Soluciones</a>
+  <div class="nav__actions">
+    <div class="lang-sw">
+      <button class="lang-sw__btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <span class="lang-sw__sep">|</span>
+      <button class="lang-sw__btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+    <a href="https://wa.me/573195198213?text=Hola%2C%20quiero%20hablar%20con%20un%20experto%20de%20DreamGIS%20sobre%20soluciones%20geoespaciales." class="btn btn--primary btn--pill btn--sm" data-i18n="nav.cta" target="_blank" rel="noopener">Habla con un experto</a>
+  </div>
+</div>
+
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero con-hero" id="hero">
+  <div class="hero__bg">
+    <img
+      src="img/new-slider-min.png"
+      alt="Vista aérea de territorio"
+      class="hero__bg-img"
+      loading="eager"
+    />
+    <div class="hero__overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow" data-i18n="contacto.eyebrow">Contacto</p>
+    <h1 class="hero__title" data-i18n="contacto.hero_title">
+      Hablemos de su territorio
+    </h1>
+    <p class="hero__sub" data-i18n="contacto.hero_sub">
+      Cuéntenos el reto y un especialista de DreamGIS se pondrá en contacto con usted en menos de 24 horas.
+    </p>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FORMULARIO
+==================================================== -->
+<section class="contacto-section" id="formulario">
+  <div class="contacto-section__inner container">
+    <div class="contacto-form-card">
+      <iframe
+        src="https://arcg.is/nObzn0"
+        title="Formulario de contacto DreamGIS"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer class="footer">
+  <div class="footer__main container">
+    <div class="footer__logo">
+      <a href="index.html" aria-label="DreamGIS — Inicio">
+        <img src="img/new-design/logo-dreamgis.svg" alt="DreamGIS" />
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.nosotros">Nosotros</span>
+        <ul>
+          <li><a href="nosotros.html#equipo" data-i18n="footer.equipo">Equipo</a></li>
+          <li><a href="index.html#aliados"   data-i18n="footer.aliados">Aliados</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-head" data-i18n="footer.servicios">Soluciones</span>
+        <ul>
+          <li><a href="soluciones.html#arcgis"     data-i18n="footer.arcgis">Esri · ArcGIS</a></li>
+          <li><a href="soluciones.html#vantor"     data-i18n="footer.vantor">Vantor</a></li>
+          <li><a href="soluciones.html#syspective" data-i18n="footer.syspective">Syspective</a></li>
+          <li><a href="soluciones.html#vertigis"   data-i18n="footer.vertigis">VertiGIS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer__cta">
+      <a href="contactenos.html" class="btn btn--primary btn--pill" data-i18n="footer.cta">Contáctanos</a>
+    </div>
+  </div>
+
+  <div class="footer__legal container">
+    <a href="#" data-i18n="footer.privacy">Política de privacidad</a>
+    <a href="#" data-i18n="footer.terms">Términos y condiciones</a>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/company/dreamgis" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="img/icon-linkedin.svg" alt="LinkedIn" width="22" height="22" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ====================================================
+     SCRIPTS
+==================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="js/v2-main.js"></script>
+
+</body>
 </html>
