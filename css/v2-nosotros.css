@@ -280,6 +280,17 @@
   color: var(--muted);
 }
 
+.team-card__linkedin {
+  display: inline-flex;
+  margin-top: var(--sp-md);
+  transition: opacity var(--tr-color);
+}
+
+.team-card__linkedin:hover,
+.team-card__linkedin:focus-visible {
+  opacity: 0.7;
+}
+
 
 /* ═══════════════════════════════
    CLIENTES

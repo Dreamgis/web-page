@@ -48,3 +48,5 @@ Thumbs.db
 .validate-screenshots/
 desing/*
 .DS_Store
+.claude/
+.validate-screenshots

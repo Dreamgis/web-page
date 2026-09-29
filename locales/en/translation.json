@@ -135,11 +135,15 @@
     "cta_sub":     "Tell us the challenge and we'll find the geospatial solution you need.",
     "cta_btn":     "Talk to an expert"
   },
+  "contacto": {
+    "eyebrow":    "Contact",
+    "hero_title": "Let's talk about your territory",
+    "hero_sub":   "Tell us the challenge and a DreamGIS specialist will get in touch with you within 24 hours."
+  },
   "footer": {
     "nosotros":    "About",
     "equipo":      "Team",
     "aliados":     "Partners",
-    "testimonios": "Testimonials",
     "servicios":   "Solutions",
     "arcgis":      "Esri · ArcGIS",
     "vantor":      "Vantor",

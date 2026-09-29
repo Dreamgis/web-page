@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home":       "Home",
+    "home":       "Inicio",
     "nosotros":   "Nosotros",
     "soluciones": "Soluciones",
     "cta":        "Habla con un experto"
@@ -135,11 +135,15 @@
     "cta_sub":     "Cuéntenos el reto y encontramos la solución geoespacial que necesita.",
     "cta_btn":     "Habla con un experto"
   },
+  "contacto": {
+    "eyebrow":    "Contacto",
+    "hero_title": "Hablemos de su territorio",
+    "hero_sub":   "Cuéntenos el reto y un especialista de DreamGIS se pondrá en contacto con usted en menos de 24 horas."
+  },
   "footer": {
     "nosotros":    "Nosotros",
     "equipo":      "Equipo",
     "aliados":     "Aliados",
-    "testimonios": "Testimonios",
     "servicios":   "Soluciones",
     "arcgis":      "Esri · ArcGIS",
     "vantor":      "Vantor",
